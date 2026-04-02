@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="@color/color_white"
+        icon="@drawable/ic_home_selected"
+        id="@+id/admin_menu_nav_home" />
+
+    <tab
+        barColorWhenSelected="@color/color_white"
+        icon="@drawable/ic_beat"
+        id="@+id/admin_menu_nav_health_mode" />
+
+    <tab
+        barColorWhenSelected="@color/color_white"
+        icon="@drawable/ic_scan"
+        id="@+id/admin_menu_nav_quick_scan" />
+
+    <tab
+        barColorWhenSelected="@color/color_white"
+        icon="@drawable/ic_activity_unactive"
+        id="@+id/admin_menu_nav_activity_mode" />
+
+    <tab
+        barColorWhenSelected="@color/color_white"
+        icon="@drawable/ic_sleep_bottom"
+        id="@+id/admin_menu_nav_sleep_mode" />
+
+</tabs>

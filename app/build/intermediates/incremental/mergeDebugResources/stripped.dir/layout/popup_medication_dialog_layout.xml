@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/raw_hrv_popup_relative_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/raw_hrv_popup_relative_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_disabled_color">
+
+                <TextView
+                    android:id="@+id/popup_medication_dialog_layout_textview_enter_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_10odp"
+                    android:text="@string/popup_lbl_medication_header"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/raw_hrv_popup_relative_header"
+                android:background="@color/color_white">
+
+                <RelativeLayout
+                    android:id="@+id/raw_hrv_popup_relative_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/popup_medication_dialog_layout_edittext_medication1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edittext_background_black"
+                        android:hint="@string/popup_lbl_first_medication_hint"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:text="" />
+                    <EditText
+                        android:id="@+id/popup_medication_dialog_layout_edittext_medication2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/popup_medication_dialog_layout_edittext_medication1"
+                        android:imeOptions="actionNext"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/edittext_background_black"
+                        android:hint="@string/popup_lbl_second_medication_hint"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/popup_medication_dialog_layout_edittext_medication3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:layout_below="@+id/popup_medication_dialog_layout_edittext_medication2"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/edittext_background_black"
+                        android:hint="@string/popup_lbl_third_medication_hint"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:text="" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10odp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/raw_hrv_popup_relative_message"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                    <Button
+                        android:id="@+id/popup_medication_dialog_layout_button_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_disabled"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/text_ok"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <Button
+                        android:id="@+id/popup_medication_dialog_layout_button_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_disabled"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/text_cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/_16ssp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

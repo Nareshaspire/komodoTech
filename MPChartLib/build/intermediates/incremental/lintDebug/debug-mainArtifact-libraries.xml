@@ -1,0 +1,6 @@
+<libraries>
+  <library
+      name="androidx.annotation:annotation:1.0.0@jar"
+      jars="C:\Users\faculty\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation\1.0.0\45599f2cd5965ac05a1488fa2a5c0cdd7c499ead\annotation-1.0.0.jar"
+      resolved="androidx.annotation:annotation:1.0.0"/>
+</libraries>

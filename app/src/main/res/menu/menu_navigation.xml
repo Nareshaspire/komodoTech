@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_navigation_main"
+        android:checkableBehavior="none">
+
+        <!--<item
+            android:id="@+id/admin_menu_nav_home"
+            android:icon="@drawable/icon_home"
+            android:title="@string/left_nav_home"
+            android:checked="true"/>
+
+        <item
+            android:id="@+id/admin_menu_nav_manage_device"
+            android:icon="@drawable/icon_device"
+            android:title="@string/left_nav_manage_device"
+            android:checked="true"/>
+        <item
+            android:id="@+id/admin_menu_nav_manage_settings"
+            android:icon="@drawable/icon_setting"
+            android:title="@string/left_nav_settings"
+            android:checked="true"/>
+        <item
+            android:id="@+id/admin_menu_nav_manage_about_us"
+            android:icon="@drawable/icon_about"
+            android:title="@string/left_nav_about_us"
+            android:checked="true"/>
+        <item
+            android:id="@+id/admin_menu_nav_manage_logout"
+            android:icon="@drawable/icon_logout"
+            android:title="@string/left_nav_logout"
+            android:checked="true"/>-->
+    </group>
+
+</menu>

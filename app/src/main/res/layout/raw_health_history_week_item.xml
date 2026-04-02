@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_18sdp"
+    >
+
+    <TextView
+        android:id="@+id/raw_health_history_week_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:gravity="center"
+        android:textColor="@color/color_gray_5"
+        android:textSize="@dimen/_10ssp"
+        tools:text="Daily Avg. HRV" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/raw_health_history_week_item_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_below="@+id/raw_health_history_week_item_title"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardCornerRadius="@dimen/_17sdp"
+        app:cardElevation="@dimen/_2sdp"
+
+        app:cardUseCompatPadding="true"
+      >
+
+        <com.github.mikephil.charting.charts.ScatterChart
+            android:id="@+id/raw_health_history_week_item_graph"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+

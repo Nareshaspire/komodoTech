@@ -1,0 +1,15 @@
+com/github/mikephil/charting/test/ObjectPoolTest.java
+ com.github.mikephil.charting.test.ObjectPoolTest
+ com.github.mikephil.charting.test.ObjectPoolTest$TestPoolable
+com/github/mikephil/charting/test/ApproximatorTest.java
+ com.github.mikephil.charting.test.ApproximatorTest
+com/github/mikephil/charting/test/DataSetTest.java
+ com.github.mikephil.charting.test.DataSetTest
+com/github/mikephil/charting/test/LargeValueFormatterTest.java
+ com.github.mikephil.charting.test.LargeValueFormatterTest
+com/github/mikephil/charting/test/BarDataTest.java
+ com.github.mikephil.charting.test.BarDataTest
+com/github/mikephil/charting/test/ChartDataTest.java
+ com.github.mikephil.charting.test.ChartDataTest
+com/github/mikephil/charting/test/AxisRendererTest.java
+ com.github.mikephil.charting.test.AxisRendererTest

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_history_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/activity_health_mode_history_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:focusable="false"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fragment_setting_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/text_health_mode_history"
+            android:textColor="@color/toolbar_bg_color"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_history_main_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/activity_health_mode_history_day_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@drawable/button_background_rounded_sky_blue"
+                android:paddingStart="@dimen/_22sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_22sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="Day"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/activity_health_mode_history_week_button"
+                app:layout_constraintTop_toTopOf="@+id/activity_health_mode_history_week_button" />
+
+
+            <TextView
+                android:id="@+id/activity_health_mode_history_week_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_rounded_gray"
+                android:paddingStart="@dimen/_22sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_22sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="Week"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/activity_health_mode_history_month_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:background="@drawable/button_background_rounded_gray"
+                android:paddingStart="@dimen/_22sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_22sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="Month"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/activity_health_mode_history_week_button"
+                app:layout_constraintTop_toTopOf="@+id/activity_health_mode_history_week_button" />
+            <TextView
+                android:id="@+id/activity_health_mode_history_date_or_week_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="Today"
+                android:textColor="@color/toolbar_bg_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_health_mode_history_week_button" />
+
+            <ImageView
+                android:id="@+id/activity_health_mode_history_previous_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/ic_previous"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_health_mode_history_date_or_week_tv"
+                app:layout_constraintEnd_toStartOf="@+id/activity_health_mode_history_date_or_week_tv"
+                app:layout_constraintTop_toTopOf="@+id/activity_health_mode_history_date_or_week_tv"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/activity_health_mode_history_next_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_next"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_health_mode_history_date_or_week_tv"
+                app:layout_constraintStart_toEndOf="@+id/activity_health_mode_history_date_or_week_tv"
+                app:layout_constraintTop_toTopOf="@+id/activity_health_mode_history_date_or_week_tv"
+                tools:ignore="ContentDescription" />
+
+
+
+            <TextView
+                android:id="@+id/activity_health_mode_history_hrv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/text_heart_rate_variability"
+                android:textColor="@color/color_gray_5"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_health_mode_history_date_or_week_tv" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/activity_health_mode_history_history_graph_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardCornerRadius="@dimen/_17sdp"
+                app:cardElevation="@dimen/_2sdp"
+
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_health_mode_history_hrv_title">
+
+                <com.github.mikephil.charting.charts.ScatterChart
+                    android:id="@+id/activity_health_mode_history_history_graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/activity_health_mode_history_ecg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/text_ecg_ekg_history"
+                android:textColor="@color/color_gray_5"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_health_mode_history_history_graph_card_view" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_health_mode_history_day_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="@dimen/_50sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_health_mode_history_ecg_title"
+                tools:ignore="UnusedAttribute"
+                tools:listitem="@layout/raw_health_history_ecg_item" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/activity_health_mode_history_day_no_data_found_tv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_34sdp"-->
+<!--                android:text="@string/text_no_data_found"-->
+<!--                android:textColor="@color/mandatory_color"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/activity_health_mode_history_ecg_title" />-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_health_mode_history_week_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="@dimen/_50sdp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/activity_health_mode_history_date_or_week_tv"
+                tools:ignore="UnusedAttribute"
+                tools:listitem="@layout/raw_health_history_week_item" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

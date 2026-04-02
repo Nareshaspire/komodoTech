@@ -1,0 +1,12 @@
+<dependencies>
+  <compile
+      roots="androidx.annotation:annotation:1.0.0@jar">
+    <dependency
+        name="androidx.annotation:annotation:1.0.0@jar"/>
+  </compile>
+  <package
+      roots="androidx.annotation:annotation:1.0.0@jar">
+    <dependency
+        name="androidx.annotation:annotation:1.0.0@jar"/>
+  </package>
+</dependencies>

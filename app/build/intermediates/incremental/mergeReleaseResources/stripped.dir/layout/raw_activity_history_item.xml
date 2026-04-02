@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_history_golf_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/color_white"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardUseCompatPadding="true"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="85dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/raw_activity_history_main_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/raw_activity_history_item_activity_image_cl_main"
+                android:layout_width="@dimen/_46sdp"
+                android:layout_height="@dimen/_46sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_35sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription"
+                tools:text="A" />
+
+            <TextView
+                android:id="@+id/raw_activity_history_activity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Golf"
+                android:textColor="@color/text_history"
+                android:textSize="@dimen/_24ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/raw_activity_history_day_of_the_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:text="Mon"
+                android:textColor="@color/text_history"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/raw_activity_history_activity_name"
+                app:layout_constraintStart_toEndOf="@+id/raw_activity_history_activity_name" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/raw_activity_history_bottom_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_13sdp"
+            android:visibility="gone"
+            android:layout_below="@id/raw_activity_history_main_cl"
+            tools:visibility="visible">
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/raw_activity_history_item_activity_image_cl_expanded"
+                android:layout_width="@dimen/_46sdp"
+                android:layout_height="@dimen/_46sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_35sdp"
+                android:src="@drawable/ic_golf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/raw_activity_history_activity_name_and_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:text="Morning Run, 7:35 AM"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Avg. BPM"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/raw_activity_history_item_average_bpm_value"
+                app:layout_constraintEnd_toStartOf="@+id/raw_activity_history_item_average_bpm_value" />
+
+            <TextView
+                android:id="@+id/raw_activity_history_item_average_bpm_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:text="124"
+                android:textColor="@color/sky_color"
+                android:textSize="@dimen/_50ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/raw_activity_history_activity_name_and_time" />
+
+            <View
+                android:id="@+id/horizontal_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@color/horizontal_line_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/raw_activity_history_item_average_bpm_value" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/raw_activity_history_item_guideline_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3333" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/raw_activity_history_item_guideline_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6666" />
+
+            <TextView
+                android:id="@+id/raw_activity_history_item_met_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="5.5 MET"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="@+id/met_iv"
+                app:layout_constraintStart_toStartOf="@+id/met_iv"
+                app:layout_constraintTop_toBottomOf="@id/met_iv" />
+
+            <ImageView
+                android:id="@+id/met_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/ic_met"
+                app:layout_constraintEnd_toStartOf="@+id/raw_activity_history_item_guideline_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal_line"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/bpm_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/ic_bpm"
+                app:layout_constraintEnd_toStartOf="@+id/raw_activity_history_item_guideline_2"
+                app:layout_constraintStart_toStartOf="@+id/raw_activity_history_item_guideline_1"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal_line" />
+
+            <TextView
+                android:id="@+id/raw_activity_history_item_max_bpm_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="145"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/raw_activity_history_item_met_value"
+                app:layout_constraintEnd_toEndOf="@+id/bpm_iv"
+                app:layout_constraintStart_toStartOf="@+id/bpm_iv" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Max bpm"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_7ssp"
+                app:layout_constraintEnd_toEndOf="@+id/raw_activity_history_item_max_bpm_value"
+                app:layout_constraintStart_toStartOf="@+id/raw_activity_history_item_max_bpm_value"
+                app:layout_constraintTop_toBottomOf="@id/raw_activity_history_item_max_bpm_value" />
+
+            <ImageView
+                android:id="@+id/hr_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/ic_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/raw_activity_history_item_guideline_2"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal_line" />
+
+            <TextView
+                android:id="@+id/raw_activity_history_item_total_duration_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.15 hr"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/raw_activity_history_item_max_bpm_value"
+                app:layout_constraintEnd_toEndOf="@+id/hr_iv"
+                app:layout_constraintStart_toStartOf="@+id/hr_iv" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\MPChartLib"
+    name=":MPChartLib"
+    type="LIBRARY"
+    maven="com.github.philjay:MPChartLib:"
+    gradle="7.0.4"
+    buildFolder="build"
+    bootClassPath="C:\Users\faculty\AppData\Local\Android\Sdk\platforms\android-28\android.jar;C:\Users\faculty\AppData\Local\Android\Sdk\build-tools\30.0.2\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-28"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

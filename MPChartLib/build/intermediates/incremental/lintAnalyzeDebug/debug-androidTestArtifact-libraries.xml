@@ -1,0 +1,19 @@
+<libraries>
+  <library
+      name="androidx.annotation:annotation:1.0.0@jar"
+      jars="C:\Users\faculty\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation\1.0.0\45599f2cd5965ac05a1488fa2a5c0cdd7c499ead\annotation-1.0.0.jar"
+      resolved="androidx.annotation:annotation:1.0.0"/>
+  <library
+      name="C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android@@:MPChartLib::debug"
+      jars="C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\MPChartLib\build\.transforms\3b9c0544703a6353936b1718a6ad9fa3\transformed\out\jars\classes.jar"
+      resolved="com.github.philjay:MPChartLib:unspecified"
+      folder="C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\MPChartLib\build\.transforms\3b9c0544703a6353936b1718a6ad9fa3\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+</libraries>

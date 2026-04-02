@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <import type="com.aiosleeve.aiosleeve.BuildConfig"/>
+    </data>
+<RelativeLayout
+    android:id="@+id/activity_signup_main_realtive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:id="@+id/fragment_setting_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/activity_profile_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:focusable="false"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fragment_setting_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/text_settings"
+            android:textAllCaps="true"
+            android:textColor="@color/toolbar_bg_color"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/activity_profile_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_below="@+id/fragment_setting_main_layout"
+        android:isScrollContainer="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@color/color_white">
+
+            <View
+                android:id="@+id/activity_profile_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txt_register_color"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/activity_profile_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:drawableStart="@drawable/ic_username"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:drawablePadding="@dimen/_20sdp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/text_account"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_view_1" />
+            <View
+                android:id="@+id/activity_profile_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txt_register_color"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_account_button" />
+
+            <TextView
+                android:id="@+id/activity_profile_guides_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_guides"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:drawablePadding="@dimen/_18sdp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/text_guides"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_view_2" />
+            <View
+                android:id="@+id/activity_profile_view_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txt_register_color"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_guides_button" />
+
+            <TextView
+                android:id="@+id/activity_profile_privacy_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_privacy"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:drawablePadding="@dimen/_20sdp"
+                android:ellipsize="end"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:lines="1"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/text_privacy"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_view_3" />
+            <View
+                android:id="@+id/activity_profile_view_4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txt_register_color"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_privacy_button" />
+
+            <TextView
+                android:id="@+id/activity_profile_support_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_support"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:drawablePadding="@dimen/_20sdp"
+                android:ellipsize="end"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:lines="1"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/text_support"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_view_4" />
+            <View
+                android:id="@+id/activity_profile_view_5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txt_register_color"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_support_button" />
+
+
+            <TextView
+                android:id="@+id/activity_profile_notification_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_notification"
+                android:drawablePadding="@dimen/_20sdp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/text_notifications"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_view_5"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/activity_profile_notification_status_switch"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/selector_switch"
+                android:gravity="center"
+                android:thumb="@null"
+                app:layout_constraintEnd_toEndOf="@+id/activity_profile_notification_button"
+                app:layout_constraintTop_toTopOf="@+id/activity_profile_notification_button"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_profile_notification_button"/>
+
+
+            <View
+                android:id="@+id/activity_profile_view_6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txt_register_color"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_notification_button" />
+
+            <TextView
+                android:id="@+id/activity_profile_logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_logout"
+                android:drawablePadding="@dimen/_20sdp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/text_logout"
+                android:textColor="@color/txt_register_color"
+                android:textSize="@dimen/_17ssp"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_view_6" />
+            <View
+                android:id="@+id/activity_profile_view_7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/txt_register_color"
+                app:layout_constraintTop_toBottomOf="@+id/activity_profile_logout_button" />
+<!--            <TextView-->
+<!--                android:id="@+id/activity_profile_health_mode_history_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableStart="@drawable/ic_username"-->
+<!--                android:drawableEnd="@drawable/ic_arrow"-->
+<!--                android:drawablePadding="@dimen/_20sdp"-->
+<!--                android:ellipsize="end"-->
+<!--                android:lines="1"-->
+<!--                android:padding="@dimen/_12sdp"-->
+<!--                android:text="Health Mode History(Dev)"-->
+<!--                android:textColor="@color/txt_register_color"-->
+<!--                android:textSize="@dimen/_17ssp"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/activity_profile_view_6" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/activity_profile_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:lines="1"
+        android:padding="@dimen/_8sdp"
+        android:text="Version: 1.0.5"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/txt_register_color"
+        android:textSize="@dimen/_13sdp"
+        tools:text="Version: 1.0.5"
+        />
+</RelativeLayout>
+</layout>

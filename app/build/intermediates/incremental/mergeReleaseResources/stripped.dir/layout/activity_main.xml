@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                        
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/activity_main_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:fitsSystemWindows="true" android:tag="layout/activity_main_0" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/activity_main_coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/activity_main_appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/activity_main_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    app:contentInsetStart="0dp"
+                    app:layout_scrollFlags="enterAlwaysCollapsed" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <com.roughike.bottombar.BottomBar
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                app:bb_activeTabColor="@color/color_button_background"
+                app:bb_inActiveTabColor="@color/color_tab_inactive"
+                app:bb_tabXmlResource="@xml/bottombar_tabs"
+                app:labelVisibilityMode="unlabeled"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.aiosleeve.aiosleeve.view.NonSwipeableViewPager
+                android:id="@+id/activity_main_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintTop_toBottomOf="@+id/activity_main_appBarLayout" />
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+            <!--                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/activity_main_appBarLayout">-->
+
+            <!--                <ScrollView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent">-->
+
+            <!--                    <RelativeLayout-->
+            <!--                        android:id="@+id/activity_main_main_content_container"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="match_parent">-->
+
+            <!--                        <LinearLayout-->
+            <!--                            android:id="@+id/fragment_dashboard_relative_layout_connect_disconnect"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_marginLeft="@dimen/_16sdp"-->
+            <!--                            android:layout_marginTop="@dimen/_15sdp"-->
+            <!--                            android:layout_marginRight="@dimen/_16sdp"-->
+            <!--                            android:orientation="horizontal"-->
+            <!--                            android:padding="@dimen/_5sdp">-->
+
+            <!--                            <Button-->
+            <!--                                android:id="@+id/fragment_dashboard_button_scan_connect"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginRight="@dimen/_14sdp"-->
+            <!--                                android:layout_weight="1"-->
+            <!--                                android:background="@drawable/button_background_enabled"-->
+            <!--                                android:elevation="@dimen/_10sdp"-->
+            <!--                                android:focusable="false"-->
+            <!--                                android:padding="@dimen/_8sdp"-->
+            <!--                                android:text="Scan/Connect"-->
+            <!--                                android:textAllCaps="false"-->
+            <!--                                android:textColor="@color/text_color"-->
+            <!--                                android:textSize="@dimen/_12ssp" />-->
+
+            <!--                            <Button-->
+            <!--                                android:id="@+id/fragment_dashboard_button_scan_disconnect"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_alignParentRight="true"-->
+            <!--                                android:layout_marginLeft="@dimen/_14sdp"-->
+            <!--                                android:layout_weight="1"-->
+            <!--                                android:background="@drawable/button_background_enabled"-->
+            <!--                                android:focusable="false"-->
+            <!--                                android:padding="@dimen/_8sdp"-->
+            <!--                                android:text="Disconnect"-->
+            <!--                                android:textAllCaps="false"-->
+            <!--                                android:textColor="@color/text_color"-->
+            <!--                                android:textSize="@dimen/_12ssp" />-->
+            <!--                        </LinearLayout>-->
+
+            <!--                        <RelativeLayout-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="match_parent"-->
+            <!--                            android:layout_below="@+id/fragment_dashboard_relative_layout_connect_disconnect"-->
+            <!--                            android:gravity="center">-->
+
+            <!--                            <LinearLayout-->
+            <!--                                android:id="@+id/fragment_dashboard_linear_group_1"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_marginLeft="@dimen/_16sdp"-->
+            <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+            <!--                                android:layout_marginRight="@dimen/_16sdp"-->
+            <!--                                android:gravity="center"-->
+            <!--                                android:orientation="horizontal">-->
+
+            <!--                                <androidx.cardview.widget.CardView-->
+            <!--                                    android:id="@+id/fragment_dashboard_cardview_bpm"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_marginRight="@dimen/_7sdp"-->
+            <!--                                    android:layout_weight="1"-->
+            <!--                                    android:padding="@dimen/_5sdp"-->
+            <!--                                    app:cardBackgroundColor="@color/button_disabled_color"-->
+            <!--                                    app:cardCornerRadius="@dimen/_8sdp"-->
+            <!--                                    app:cardElevation="@dimen/_5sdp"-->
+            <!--                                    app:cardUseCompatPadding="true">-->
+
+            <!--                                    &lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--                                    &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--                                    &lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
+
+            <!--                                    <RelativeLayout-->
+            <!--                                        android:layout_width="match_parent"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:layout_margin="@dimen/_13sdp">-->
+
+            <!--                                        <ImageView-->
+            <!--                                            android:id="@+id/img_heart"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:src="@drawable/icon_heart" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/fragment_dashboard_textview_bpm"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_below="@+id/img_heart"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="BPM"-->
+            <!--                                            android:textColor="@color/button_enabled_color"-->
+            <!--                                            android:textSize="@dimen/_12ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+            <!--                                    </RelativeLayout>-->
+            <!--                                    &lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--                                </androidx.cardview.widget.CardView>-->
+
+            <!--                                <androidx.cardview.widget.CardView-->
+            <!--                                    android:id="@+id/fragment_dashboard_cardview_ecg"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_gravity="center"-->
+            <!--                                    android:layout_marginLeft="@dimen/_7sdp"-->
+            <!--                                    android:layout_weight="1"-->
+            <!--                                    android:padding="@dimen/_5sdp"-->
+            <!--                                    app:cardBackgroundColor="@color/button_disabled_color"-->
+            <!--                                    app:cardCornerRadius="@dimen/_8sdp"-->
+            <!--                                    app:cardElevation="@dimen/_5sdp"-->
+            <!--                                    app:cardUseCompatPadding="true">-->
+
+            <!--                                    &lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--                                    &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--                                    &lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
+
+            <!--                                    <RelativeLayout-->
+            <!--                                        android:layout_width="match_parent"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:layout_margin="@dimen/_13sdp">-->
+
+            <!--                                        <ImageView-->
+            <!--                                            android:id="@+id/img_ecg"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:src="@drawable/icon_ecg" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/fragment_dashboard_textview_ecg_hrv"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_below="@+id/img_ecg"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:layout_gravity="center"-->
+            <!--                                            android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="ECG/HRV"-->
+            <!--                                            android:textColor="@color/button_enabled_color"-->
+            <!--                                            android:textSize="@dimen/_12ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+            <!--                                        &lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--                                    </RelativeLayout>-->
+            <!--                                </androidx.cardview.widget.CardView>-->
+            <!--                            </LinearLayout>-->
+
+            <!--                            <LinearLayout-->
+            <!--                                android:id="@+id/fragment_dashboard_linear_group_2"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_below="@+id/fragment_dashboard_linear_group_1"-->
+            <!--                                android:layout_marginLeft="@dimen/_16sdp"-->
+            <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+            <!--                                android:layout_marginRight="@dimen/_16sdp"-->
+            <!--                                android:gravity="center"-->
+            <!--                                android:orientation="horizontal">-->
+
+            <!--                                <androidx.cardview.widget.CardView-->
+            <!--                                    android:id="@+id/fragment_dashboard_cardview_sleep"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_marginRight="@dimen/_8sdp"-->
+            <!--                                    android:layout_weight="1"-->
+            <!--                                    app:cardBackgroundColor="@color/button_disabled_color"-->
+            <!--                                    app:cardCornerRadius="@dimen/_7sdp"-->
+            <!--                                    app:cardElevation="@dimen/_5sdp"-->
+            <!--                                    app:cardUseCompatPadding="true">-->
+
+            <!--                                    <RelativeLayout-->
+            <!--                                        android:layout_width="match_parent"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:layout_margin="@dimen/_13sdp">-->
+
+            <!--                                        <ImageView-->
+            <!--                                            android:id="@+id/img_sleep"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:src="@drawable/icon_sleep" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/fragment_dashboard_textview_sleep"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_below="@+id/img_sleep"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:layout_gravity="center"-->
+            <!--                                            android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="Sleep"-->
+            <!--                                            android:textColor="@color/button_enabled_color"-->
+            <!--                                            android:textSize="@dimen/_12ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+            <!--                                    </RelativeLayout>-->
+            <!--                                </androidx.cardview.widget.CardView>-->
+
+            <!--                                <androidx.cardview.widget.CardView-->
+            <!--                                    android:id="@+id/fragment_dashboard_cardview_settings"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_marginLeft="@dimen/_7sdp"-->
+            <!--                                    android:layout_weight="1"-->
+            <!--                                    app:cardBackgroundColor="@color/button_disabled_color"-->
+            <!--                                    app:cardCornerRadius="@dimen/_8sdp"-->
+            <!--                                    app:cardElevation="@dimen/_5sdp"-->
+            <!--                                    app:cardUseCompatPadding="true">-->
+
+            <!--                                    <RelativeLayout-->
+            <!--                                        android:layout_width="match_parent"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:layout_margin="@dimen/_13sdp">-->
+
+            <!--                                        <ImageView-->
+            <!--                                            android:id="@+id/img_setting"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:src="@drawable/icon_settings" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/fragment_dashboard_textview_settings"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_below="@+id/img_setting"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                                            android:text="Setting"-->
+            <!--                                            android:textColor="@color/button_enabled_color"-->
+            <!--                                            android:textSize="@dimen/_12ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+            <!--                                    </RelativeLayout>-->
+            <!--                                </androidx.cardview.widget.CardView>-->
+            <!--                            </LinearLayout>-->
+
+            <!--                            <LinearLayout-->
+            <!--                                android:id="@+id/fragment_dashboard_linear_group_3"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_below="@+id/fragment_dashboard_linear_group_2"-->
+            <!--                                android:layout_marginLeft="@dimen/_16sdp"-->
+            <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+            <!--                                android:layout_marginRight="@dimen/_16sdp"-->
+            <!--                                android:gravity="center"-->
+            <!--                                android:orientation="horizontal">-->
+
+            <!--                                <androidx.cardview.widget.CardView-->
+            <!--                                    android:id="@+id/fragment_dashboard_cardview_long_term_ecg"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_marginRight="@dimen/_8sdp"-->
+            <!--                                    android:layout_weight="1"-->
+            <!--                                    app:cardBackgroundColor="@color/button_disabled_color"-->
+            <!--                                    app:cardCornerRadius="@dimen/_7sdp"-->
+            <!--                                    app:cardElevation="@dimen/_5sdp"-->
+            <!--                                    app:cardUseCompatPadding="true">-->
+
+            <!--                                    <RelativeLayout-->
+            <!--                                        android:layout_width="match_parent"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:layout_margin="@dimen/_13sdp">-->
+
+            <!--                                        <ImageView-->
+            <!--                                            android:id="@+id/img_long_term_ecg"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:src="@drawable/icon_ecg_unselected" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/fragment_dashboard_textview_long_term_ecg"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_below="@+id/img_long_term_ecg"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:layout_gravity="center"-->
+            <!--                                            android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="Long term ECG"-->
+            <!--                                            android:textColor="@color/button_enabled_color"-->
+            <!--                                            android:textSize="@dimen/_12ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+            <!--                                    </RelativeLayout>-->
+            <!--                                </androidx.cardview.widget.CardView>-->
+
+            <!--                                <androidx.cardview.widget.CardView-->
+            <!--                                    android:id="@+id/fragment_dashboard_cardview_medication_taken"-->
+            <!--                                    android:layout_width="match_parent"-->
+            <!--                                    android:layout_height="wrap_content"-->
+            <!--                                    android:layout_marginLeft="@dimen/_7sdp"-->
+            <!--                                    android:layout_weight="1"-->
+            <!--                                    app:cardBackgroundColor="@color/button_disabled_color"-->
+            <!--                                    app:cardCornerRadius="@dimen/_8sdp"-->
+            <!--                                    app:cardElevation="@dimen/_5sdp"-->
+            <!--                                    app:cardUseCompatPadding="true">-->
+
+            <!--                                    <RelativeLayout-->
+            <!--                                        android:layout_width="match_parent"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:layout_marginLeft="@dimen/_5sdp"-->
+            <!--                                        android:layout_marginTop="@dimen/_13sdp"-->
+            <!--                                        android:layout_marginRight="@dimen/_5sdp"-->
+            <!--                                        android:layout_marginBottom="@dimen/_13sdp">-->
+
+            <!--                                        <ImageView-->
+            <!--                                            android:id="@+id/img_medication_taken"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:src="@drawable/icon_settings" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/fragment_dashboard_textview_medication_taken"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_below="@+id/img_medication_taken"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="Medication Taken"-->
+            <!--                                            android:textColor="@color/button_enabled_color"-->
+            <!--                                            android:textSize="@dimen/_12ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+            <!--                                    </RelativeLayout>-->
+            <!--                                </androidx.cardview.widget.CardView>-->
+            <!--                            </LinearLayout>-->
+
+
+            <!--                            <LinearLayout-->
+            <!--                                android:id="@+id/web_viewer_webview_new"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_below="@id/fragment_dashboard_linear_group_3"-->
+            <!--                                android:layout_marginLeft="@dimen/_16sdp"-->
+            <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+            <!--                                android:layout_marginRight="@dimen/_16sdp"-->
+            <!--                                android:gravity="center"-->
+            <!--                                android:orientation="horizontal">-->
+
+            <!--                                <androidx.cardview.widget.CardView-->
+            <!--                                    android:layout_width="@dimen/_150sdp"-->
+            <!--                                    android:layout_height="@dimen/_150sdp"-->
+            <!--                                    android:layout_below="@id/fragment_dashboard_linear_group_3"-->
+            <!--                                    android:layout_weight="1"-->
+            <!--                                    app:cardBackgroundColor="@color/color_white"-->
+            <!--                                    app:cardCornerRadius="@dimen/_8sdp"-->
+            <!--                                    app:cardElevation="@dimen/_5sdp"-->
+            <!--                                    app:cardUseCompatPadding="true">-->
+
+            <!--                                    <RelativeLayout-->
+            <!--                                        android:layout_width="139dp"-->
+            <!--                                        android:layout_height="match_parent"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:layout_marginLeft="@dimen/_5sdp"-->
+            <!--                                        android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                                        android:layout_marginRight="@dimen/_5sdp"-->
+            <!--                                        android:layout_marginBottom="@dimen/_13sdp">-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="Strees level"-->
+            <!--                                            android:textAllCaps="true"-->
+            <!--                                            android:textColor="@color/text_color"-->
+            <!--                                            android:textSize="@dimen/_12ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:layout_centerVertical="true"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="N/A"-->
+            <!--                                            android:textAllCaps="true"-->
+            <!--                                            android:textColor="@color/text_orange"-->
+            <!--                                            android:textSize="@dimen/_36ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+
+
+            <!--                                    </RelativeLayout>-->
+            <!--                                </androidx.cardview.widget.CardView>-->
+
+            <!--                                <androidx.cardview.widget.CardView-->
+            <!--                                    android:layout_width="@dimen/_150sdp"-->
+            <!--                                    android:layout_height="@dimen/_150sdp"-->
+            <!--                                    android:layout_below="@id/fragment_dashboard_linear_group_3"-->
+            <!--                                    android:layout_weight="1"-->
+            <!--                                    app:cardCornerRadius="@dimen/_8sdp"-->
+            <!--                                    app:cardElevation="@dimen/_5sdp"-->
+            <!--                                    app:cardUseCompatPadding="true">-->
+
+            <!--                                    <RelativeLayout-->
+            <!--                                        android:layout_width="match_parent"-->
+            <!--                                        android:layout_height="match_parent"-->
+            <!--                                        android:layout_centerInParent="true"-->
+            <!--                                        android:background="@drawable/vertical_gradient"-->
+            <!--                                        android:paddingLeft="@dimen/_5sdp"-->
+            <!--                                        android:paddingTop="@dimen/_8sdp"-->
+            <!--                                        android:paddingRight="@dimen/_5sdp"-->
+            <!--                                        android:paddingBottom="@dimen/_13sdp">-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/one"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="LAST SLEEP"-->
+            <!--                                            android:textAllCaps="true"-->
+            <!--                                            android:textColor="@color/text_color"-->
+            <!--                                            android:textSize="@dimen/_12ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+
+            <!--                                        <TextView-->
+            <!--                                            android:id="@+id/fdsf"-->
+            <!--                                            android:layout_width="wrap_content"-->
+            <!--                                            android:layout_height="wrap_content"-->
+            <!--                                            android:layout_centerHorizontal="true"-->
+            <!--                                            android:layout_centerVertical="true"-->
+            <!--                                            android:gravity="center"-->
+            <!--                                            android:text="N/A"-->
+            <!--                                            android:textAllCaps="true"-->
+            <!--                                            android:textColor="@color/text_orange"-->
+            <!--                                            android:textSize="@dimen/_36ssp"-->
+            <!--                                            android:textStyle="bold" />-->
+
+            <!--                                    </RelativeLayout>-->
+            <!--                                </androidx.cardview.widget.CardView>-->
+            <!--                            </LinearLayout>-->
+
+            <!--                            <EditText-->
+            <!--                                android:id="@+id/abc"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_below="@id/web_viewer_webview_new"-->
+            <!--                                android:layout_marginLeft="@dimen/_18sdp"-->
+            <!--                                android:layout_marginTop="@dimen/_10sdp"-->
+            <!--                                android:layout_marginRight="@dimen/_18sdp"-->
+            <!--                                android:background="@drawable/custom_home_button"-->
+            <!--                                android:clickable="false"-->
+            <!--                                android:drawableStart="@drawable/ic_dob"-->
+            <!--                                android:drawablePadding="@dimen/_8sdp"-->
+            <!--                                android:ellipsize="end"-->
+            <!--                                android:enabled="false"-->
+            <!--                                android:gravity="center_horizontal"-->
+            <!--                                android:hint="@string/label_quick_scan"-->
+            <!--                                android:inputType="none"-->
+            <!--                                android:lines="1"-->
+            <!--                                android:padding="@dimen/_12sdp"-->
+            <!--                                android:textColor="@color/text_dashboard"-->
+            <!--                                android:textSize="@dimen/_14ssp" />-->
+
+            <!--                            <EditText-->
+            <!--                                android:id="@+id/activity_main_quick_activity_mode"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_below="@id/abc"-->
+            <!--                                android:layout_marginLeft="@dimen/_18sdp"-->
+            <!--                                android:layout_marginTop="@dimen/_10sdp"-->
+            <!--                                android:layout_marginRight="@dimen/_18sdp"-->
+            <!--                                android:background="@drawable/custom_home_button"-->
+            <!--                                android:clickable="false"-->
+            <!--                                android:drawableStart="@drawable/ic_gender"-->
+            <!--                                android:drawablePadding="@dimen/_8sdp"-->
+            <!--                                android:ellipsize="end"-->
+            <!--                                android:enabled="false"-->
+            <!--                                android:gravity="center_horizontal"-->
+            <!--                                android:hint="@string/label_activity_mode"-->
+            <!--                                android:inputType="none"-->
+            <!--                                android:lines="1"-->
+            <!--                                android:padding="@dimen/_12sdp"-->
+            <!--                                android:textSize="@dimen/_14ssp" />-->
+
+            <!--                            <EditText-->
+            <!--                                android:id="@+id/activity_main_quick_health_mode"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:layout_below="@id/activity_main_quick_activity_mode"-->
+            <!--                                android:layout_marginLeft="@dimen/_18sdp"-->
+            <!--                                android:layout_marginTop="@dimen/_10sdp"-->
+            <!--                                android:layout_marginRight="@dimen/_18sdp"-->
+            <!--                                android:background="@drawable/custom_home_button"-->
+            <!--                                android:clickable="false"-->
+            <!--                                android:drawableStart="@drawable/ic_gender"-->
+            <!--                                android:drawablePadding="@dimen/_8sdp"-->
+            <!--                                android:ellipsize="end"-->
+            <!--                                android:enabled="false"-->
+            <!--                                android:gravity="center_horizontal"-->
+            <!--                                android:hint="@string/label_health_mode"-->
+            <!--                                android:inputType="none"-->
+            <!--                                android:lines="1"-->
+            <!--                                android:padding="@dimen/_12sdp"-->
+            <!--                                android:textSize="@dimen/_14ssp" />-->
+            <!--                        </RelativeLayout>-->
+            <!--                    </RelativeLayout>-->
+            <!--                </ScrollView>-->
+            <!--            </RelativeLayout>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/activity_main_navigation_view"
+            style="@style/NavigationTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none"
+            app:itemBackground="@color/drawer_background_color"
+            app:itemIconTint="@drawable/drawer_item_icon_selector"
+            app:itemTextColor="@drawable/drawer_item_text_selector"
+            app:menu="@menu/menu_navigation" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+         

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aiosleeve.aiosleeve">
+
+    
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <application
+        android:name=".AIOApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="m"
+        tools:replace="android:allowBackup"
+        >
+        <activity android:name=".ActivitySleepModeHistory"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".ActivityHealthModeHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite" />
+        <activity
+            android:name=".ActivityProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeSplash.AppCompat.Light.NoActionBar.FullScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.FragmentManageDevice"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite" />
+        <activity
+            android:name=".ActivityActivityHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/activity_signup"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite" />
+        <activity
+            android:name=".fragments.FragmentECG"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.FragmentSleepDetails"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.FragmentECGList"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.FragmentECGDetails"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite" />
+        <activity
+            android:name=".fragments.FragmentBPM"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.FragmentBPMList"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.FragmentBPMDetails"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.FragmentSettings"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".fragments.FragmentSleep"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.FragmentSleepDataList"
+            android:label="@string/activity_signup"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".BPMSyncService" />
+        <service
+            android:name=".interfaces.BackgroundService"
+            android:exported="false" />
+
+        <receiver android:name=".MainActivity$ServiceReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.aiosleeve.CUSTOM_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fd50ee1c0e8371cf72aa6082fb3e865f93ab10ae" />
+
+<!--        <receiver android:name=".AlarmReceiver"/>-->
+        <receiver android:name=".AlarmReceiver"/>
+<!--            android:directBootAware="true"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.BOOT_COMPLETED" />-->
+<!--                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+    </application>
+
+</manifest>

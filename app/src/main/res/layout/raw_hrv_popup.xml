@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/raw_hrv_popup_relative_main"
+            android:layout_width="match_parent"
+            android:background="@color/color_white"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/raw_hrv_popup_relative_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_hrv_popup_navy_blue"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/raw_hrv_popup_textview_textview_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="@string/text_hrv_popup_header"
+                    android:textColor="@color/color_white" />
+
+                <RatingBar
+                    android:id="@+id/raw_hrv_popup_rating_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:isIndicator="true"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:stepSize="1"
+                    android:theme="@style/RatingBar"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/raw_hrv_popup_emoji_cl"
+                android:layout_width="@dimen/_59sdp"
+                android:layout_height="@dimen/_59sdp"
+                android:background="@drawable/button_background_hrv_popup_round_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/raw_hrv_popup_relative_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/raw_hrv_popup_relative_header">
+
+                <com.vanniktech.emoji.EmojiTextView
+                    android:id="@+id/raw_hr_popup_emoji_imageview"
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:text="A"
+                    android:gravity="center"
+                    android:textSize="@dimen/_30sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/raw_hrv_popup_textview_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:text="Health Score: 0.00"
+                android:textColor="@color/color_gray_3"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/raw_hrv_popup_emoji_cl" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/raw_hrv_popup_relative_header"
+                app:layout_constraintTop_toBottomOf="@+id/raw_hrv_popup_relative_header"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/raw_hrv_popup_relative_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_50sdp"
+                    android:paddingBottom="@dimen/_50sdp">
+
+                    <TextView
+                        android:id="@+id/raw_hrv_popup_textview_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_40sdp"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_13sdp"
+                        android:paddingEnd="@dimen/_13sdp"
+                        android:text="@string/text_hrv_popup_message"
+                        android:textColor="@color/button_disabled_color"
+                        android:textSize="@dimen/_14sdp"
+                        android:visibility="visible"
+                        tools:text="01:56" />
+
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/raw_hrv_popup_relative_message"
+                    android:layout_marginBottom="@dimen/_28sdp">
+
+                    <Button
+                        android:id="@+id/raw_hrv_popup_button_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_hrv_popup_navy_blue"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="OK"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/_12ssp"
+                        tools:ignore="ButtonOrder" />
+
+                    <Button
+                        android:id="@+id/raw_hrv_popup_button_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_hrv_popup_navy_blue"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

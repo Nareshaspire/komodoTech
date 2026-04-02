@@ -1,0 +1,491 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_setting_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:id="@+id/fragment_setting_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/fragment_setting_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:focusable="false"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/fragment_setting_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/text_my_account"
+            android:textColor="@color/toolbar_bg_color"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_setting_main_layout"
+        android:isScrollContainer="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_settings_error_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/text_settings_mandatory_error"
+                    android:textColor="@color/mandatory_color"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/fragment_settings_edittext_username"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:drawableStart="@drawable/ic_username"
+
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/text_signup_user"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:id="@+id/fragment_settings_edittext_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/custom_edittext_background_login_signup_gray"
+                    android:drawableStart="@drawable/ic_email"
+                    android:textColor="@color/color_black"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/text_signup_hint_email"
+                    android:lines="1"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <TextView
+                    android:id="@+id/fragment_settings_edittext_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_gender"
+                    android:textColor="@color/color_black"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/text_signup_hint_gender"
+                    android:lines="1"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:id="@+id/fragment_settings_edittext_metric"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:drawableStart="@drawable/ic_imperial"
+                    android:textColor="@color/color_black"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/text_signup_hint_metric"
+                    android:lines="1"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_weight="0"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/fragment_settings_edittext_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext_background_login_signup"
+                        android:drawableStart="@drawable/ic_weight"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:hint="@string/text_signup_hint_weight"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="5"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_12sdp"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_25sdp"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/fragment_seting_textview_weightunit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:layout_constraintTop_toTopOf="@+id/fragment_settings_edittext_weight"
+                        app:layout_constraintEnd_toEndOf="@+id/fragment_settings_edittext_weight"
+                        app:layout_constraintBottom_toBottomOf="@+id/fragment_settings_edittext_weight"
+                        android:gravity="center"
+                        android:text="lb" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_weight="0"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/fragment_settings_edittext_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext_background_login_signup"
+                        android:drawableStart="@drawable/ic_height"
+                        android:editable="false"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:hint="@string/text_signup_hint_height"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_12sdp"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_25sdp"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/fragment_seting_textview_heightunit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:text="ft"
+                        app:layout_constraintBottom_toBottomOf="@+id/fragment_settings_edittext_height"
+                        app:layout_constraintEnd_toEndOf="@+id/fragment_settings_edittext_height"
+                        app:layout_constraintTop_toTopOf="@+id/fragment_settings_edittext_height" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <EditText
+                    android:id="@+id/fragment_settings_edittext_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_dateofbirth"
+                    
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/text_signup_hint_bob"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+                <EditText
+                    android:id="@+id/fragment_settings_edittext_medication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:drawableStart="@drawable/ic_medication"
+                    
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/text_signup_hint_medication"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <EditText
+                    android:id="@+id/fragment_settings_edittext_heart_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:drawableStart="@drawable/ic_heart"
+                    
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/text_signup_hint_heart_condition"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <EditText
+                    android:id="@+id/fragment_settings_edittext_town"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/custom_edittext_background_login_signup"
+                    android:drawableStart="@drawable/ic_city"
+                    
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/text_signup_hint_town"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+                <Button
+                    android:id="@+id/fragment_settings_button_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@drawable/button_background_login"
+                    android:elevation="@dimen/_50sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:text="@string/fragment_settings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_14ssp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/fragment_seting_bottombar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_45sdp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:visibility="gone">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/button_enabled_color"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/activity_main_linear_tab_home"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/activity_main_imageview_home"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="@dimen/_23sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_2sdp"-->
+<!--                    android:src="@drawable/icon_home_selected" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/activity_main_textview_home"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/tital_home"-->
+<!--                    android:textColor="@color/color_white"-->
+<!--                    android:textSize="@dimen/_10ssp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/activity_main_linear_bpm"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/activity_main_imageview_bpm"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="@dimen/_23sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_2sdp"-->
+<!--                    android:src="@drawable/icon_bpm_selected" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/activity_main_textview_bpm"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/tital_bpm"-->
+<!--                    android:textColor="@color/color_white"-->
+<!--                    android:textSize="@dimen/_10ssp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/activity_main_linear_tab_hrv"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/activity_main_imageview_hrv"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="@dimen/_23sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_2sdp"-->
+<!--                    android:src="@drawable/icon_ecg_selected" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/activity_main_textview_hrv"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:gravity="center"-->
+<!--                    android:lines="1"-->
+<!--                    android:text="@string/tital_ecg_hrv"-->
+<!--                    android:textColor="@color/color_white"-->
+<!--                    android:textSize="@dimen/_10ssp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/activity_main_linear_tab_sleep"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:paddingTop="@dimen/_3sdp"-->
+<!--                android:paddingBottom="@dimen/_3sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/activity_main_imageview_sleep"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="@dimen/_23sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_2sdp"-->
+<!--                    android:src="@drawable/icon_sleep_selected" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/activity_main_textview_sleep"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:gravity="center"-->
+<!--                    android:lines="1"-->
+<!--                    android:text="@string/tital_sleep"-->
+<!--                    android:textColor="@color/color_white"-->
+<!--                    android:textSize="@dimen/_10ssp" />-->
+
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
+</RelativeLayout>

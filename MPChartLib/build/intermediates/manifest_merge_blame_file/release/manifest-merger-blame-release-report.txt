@@ -1,0 +1,20 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.github.mikephil.charting" >
+4    <!--
+5  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+6
+7    <application
+8        android:allowBackup="true"
+9        android:icon="@drawable/ic_launcher"
+10        android:label="@string/app_name"
+11        android:theme="@style/AppTheme" >
+12    </application>
+13    -->
+14    <uses-sdk
+15        android:minSdkVersion="14"
+15-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\MPChartLib\src\main\AndroidManifest.xml
+16        android:targetSdkVersion="28" />
+16-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\MPChartLib\src\main\AndroidManifest.xml
+17
+18</manifest>

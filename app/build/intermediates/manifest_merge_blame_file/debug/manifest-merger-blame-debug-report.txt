@@ -1,0 +1,434 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aiosleeve.aiosleeve"
+4    android:versionCode="9"
+5    android:versionName="1.8" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+11-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:7:5-76
+11-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:7:22-73
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:8:5-67
+12-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:9:5-79
+13-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:9:22-76
+14    <uses-permission android:name="android.permission.BLUETOOTH" />
+14-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:10:5-68
+14-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:10:22-65
+15    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+15-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:11:5-74
+15-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:11:22-71
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:12:5-68
+16-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:12:22-65
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:13:5-81
+17-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:13:22-78
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:14:5-79
+18-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:14:22-76
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:15:5-81
+19-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:15:22-78
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:16:5-80
+20-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:16:22-77
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:17:5-77
+21-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:17:22-74
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
+22-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:26:22-107
+23    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+23-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\2597f537f161134bb121cf0d077ad2f0\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+23-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\2597f537f161134bb121cf0d077ad2f0\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:22-76
+24
+25    <application
+25-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:20:5-149:19
+26        android:name="com.aiosleeve.aiosleeve.AIOApplication"
+26-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:21:9-39
+27        android:allowBackup="false"
+27-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:22:9-36
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.7.0] C:\Users\faculty\.gradle\caches\transforms-3\892e8073613deed34f7bb827bf41f453\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:hardwareAccelerated="true"
+30-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:23:9-43
+31        android:icon="@drawable/ic_launcher"
+31-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:24:9-45
+32        android:label="@string/app_name"
+32-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:26:9-41
+33        android:largeHeap="true"
+33-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:27:9-33
+34        android:supportsRtl="true"
+34-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:28:9-35
+35        android:theme="@style/AppTheme"
+35-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:29:9-40
+36        android:usesCleartextTraffic="true" >
+36-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:25:9-44
+37        <activity
+37-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:33:9-35:16
+38            android:name="com.aiosleeve.aiosleeve.ActivitySleepModeHistory"
+38-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:33:19-59
+39            android:screenOrientation="portrait" />
+39-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:34:13-49
+40        <activity
+40-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:36:9-39:53
+41            android:name="com.aiosleeve.aiosleeve.ActivityHealthModeHistory"
+41-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:37:13-54
+42            android:screenOrientation="portrait"
+42-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:38:13-49
+43            android:theme="@style/StatusBarWhite" />
+43-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:39:13-50
+44        <activity
+44-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:40:9-43:53
+45            android:name="com.aiosleeve.aiosleeve.ActivityProfile"
+45-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:41:13-44
+46            android:screenOrientation="portrait"
+46-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:42:13-49
+47            android:theme="@style/StatusBarWhite" />
+47-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:43:13-50
+48        <activity
+48-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:44:9-54:20
+49            android:name="com.aiosleeve.aiosleeve.SplashActivity"
+49-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:45:13-43
+50            android:exported="true"
+50-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:48:13-36
+51            android:screenOrientation="portrait"
+51-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:46:13-49
+52            android:theme="@style/AppThemeSplash.AppCompat.Light.NoActionBar.FullScreen" >
+52-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:47:13-89
+53            <intent-filter>
+53-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:49:13-53:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:50:17-69
+54-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:50:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:52:17-77
+56-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:52:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:55:9-58:53
+60            android:name="com.aiosleeve.aiosleeve.fragments.FragmentManageDevice"
+60-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:56:13-59
+61            android:screenOrientation="portrait"
+61-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:57:13-49
+62            android:theme="@style/StatusBarWhite" />
+62-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:58:13-50
+63        <activity
+63-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:59:9-62:53
+64            android:name="com.aiosleeve.aiosleeve.MainActivity"
+64-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:60:13-41
+65            android:screenOrientation="portrait"
+65-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:61:13-49
+66            android:theme="@style/StatusBarWhite" />
+66-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:62:13-50
+67        <activity
+67-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:63:9-66:53
+68            android:name="com.aiosleeve.aiosleeve.ActivityActivityHistory"
+68-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:64:13-52
+69            android:screenOrientation="portrait"
+69-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:65:13-49
+70            android:theme="@style/StatusBarWhite" />
+70-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:66:13-50
+71        <activity
+71-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:67:9-71:47
+72            android:name="com.aiosleeve.aiosleeve.LoginActivity"
+72-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:68:13-42
+73            android:label="@string/activity_login"
+73-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:69:13-51
+74            android:screenOrientation="portrait"
+74-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:70:13-49
+75            android:theme="@style/AppTheme" />
+75-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:71:13-44
+76        <activity
+76-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:72:9-77:53
+77            android:name="com.aiosleeve.aiosleeve.SignupActivity"
+77-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:73:13-43
+78            android:label="@string/activity_signup"
+78-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:74:13-52
+79            android:screenOrientation="portrait"
+79-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:76:13-49
+80            android:theme="@style/StatusBarWhite"
+80-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:77:13-50
+81            android:windowSoftInputMode="adjustResize" />
+81-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:75:13-55
+82        <activity
+82-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:78:9-81:52
+83            android:name="com.aiosleeve.aiosleeve.fragments.FragmentECG"
+83-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:79:13-50
+84            android:label="@string/activity_signup"
+84-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:80:13-52
+85            android:screenOrientation="portrait" />
+85-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:81:13-49
+86        <activity
+86-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:82:9-85:52
+87            android:name="com.aiosleeve.aiosleeve.fragments.FragmentSleepDetails"
+87-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:83:13-59
+88            android:label="@string/activity_signup"
+88-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:84:13-52
+89            android:screenOrientation="portrait" />
+89-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:85:13-49
+90        <activity
+90-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:86:9-89:52
+91            android:name="com.aiosleeve.aiosleeve.fragments.FragmentECGList"
+91-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:87:13-54
+92            android:label="@string/activity_signup"
+92-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:88:13-52
+93            android:screenOrientation="portrait" />
+93-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:89:13-49
+94        <activity
+94-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:90:9-94:53
+95            android:name="com.aiosleeve.aiosleeve.fragments.FragmentECGDetails"
+95-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:91:13-57
+96            android:label="@string/activity_signup"
+96-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:92:13-52
+97            android:screenOrientation="portrait"
+97-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:93:13-49
+98            android:theme="@style/StatusBarWhite" />
+98-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:94:13-50
+99        <activity
+99-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:95:9-98:52
+100            android:name="com.aiosleeve.aiosleeve.fragments.FragmentBPM"
+100-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:96:13-50
+101            android:label="@string/activity_signup"
+101-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:97:13-52
+102            android:screenOrientation="portrait" />
+102-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:98:13-49
+103        <activity
+103-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:99:9-102:52
+104            android:name="com.aiosleeve.aiosleeve.fragments.FragmentBPMList"
+104-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:100:13-54
+105            android:label="@string/activity_signup"
+105-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:101:13-52
+106            android:screenOrientation="portrait" />
+106-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:102:13-49
+107        <activity
+107-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:103:9-106:52
+108            android:name="com.aiosleeve.aiosleeve.fragments.FragmentBPMDetails"
+108-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:104:13-57
+109            android:label="@string/activity_signup"
+109-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:105:13-52
+110            android:screenOrientation="portrait" />
+110-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:106:13-49
+111        <activity
+111-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:107:9-112:76
+112            android:name="com.aiosleeve.aiosleeve.fragments.FragmentSettings"
+112-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:108:13-55
+113            android:label="@string/activity_signup"
+113-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:109:13-52
+114            android:screenOrientation="portrait"
+114-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:110:13-49
+115            android:theme="@style/StatusBarWhite"
+115-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:111:13-50
+116            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+116-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:112:13-73
+117        <activity
+117-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:113:9-116:52
+118            android:name="com.aiosleeve.aiosleeve.fragments.FragmentSleep"
+118-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:114:13-52
+119            android:label="@string/activity_signup"
+119-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:115:13-52
+120            android:screenOrientation="portrait" />
+120-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:116:13-49
+121        <activity
+121-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:117:9-120:52
+122            android:name="com.aiosleeve.aiosleeve.fragments.FragmentSleepDataList"
+122-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:118:13-60
+123            android:label="@string/activity_signup"
+123-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:119:13-52
+124            android:screenOrientation="portrait" />
+124-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:120:13-49
+125
+126        <service android:name="com.aiosleeve.aiosleeve.BPMSyncService" />
+126-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:122:9-51
+126-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:122:18-48
+127        <service
+127-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:123:9-125:40
+128            android:name="com.aiosleeve.aiosleeve.interfaces.BackgroundService"
+128-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:124:13-57
+129            android:exported="false" />
+129-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:125:13-37
+130
+131        <receiver
+131-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:127:9-132:20
+132            android:name="com.aiosleeve.aiosleeve.MainActivity$ServiceReceiver"
+132-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:127:19-63
+133            android:exported="false" >
+133-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:128:13-37
+134            <intent-filter>
+134-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:129:13-131:29
+135                <action android:name="com.aiosleeve.CUSTOM_BROADCAST" />
+135-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:130:17-73
+135-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:130:25-70
+136            </intent-filter>
+137        </receiver>
+138
+139        <meta-data
+139-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:134:9-136:72
+140            android:name="io.fabric.ApiKey"
+140-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:135:13-44
+141            android:value="fd50ee1c0e8371cf72aa6082fb3e865f93ab10ae" />
+141-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:136:13-69
+142
+143        <!-- <receiver android:name=".AlarmReceiver"/> -->
+144        <receiver android:name="com.aiosleeve.aiosleeve.AlarmReceiver" />
+144-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:139:9-50
+144-->C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android\app\src\main\AndroidManifest.xml:139:19-48
+145        <!-- android:directBootAware="true" -->
+146        <!-- android:enabled="true" -->
+147        <!-- android:exported="true"> -->
+148        <!-- <intent-filter> -->
+149        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+150        <!-- <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" /> -->
+151        <!-- </intent-filter> -->
+152        <!-- </receiver> -->
+153
+154        <service
+154-->[com.google.firebase:firebase-crashlytics:18.2.6] C:\Users\faculty\.gradle\caches\transforms-3\14b884fdad809d5dea3761edf0908c0f\transformed\jetified-firebase-crashlytics-18.2.6\AndroidManifest.xml:15:9-21:19
+155            android:name="com.google.firebase.components.ComponentDiscoveryService"
+155-->[com.google.firebase:firebase-crashlytics:18.2.6] C:\Users\faculty\.gradle\caches\transforms-3\14b884fdad809d5dea3761edf0908c0f\transformed\jetified-firebase-crashlytics-18.2.6\AndroidManifest.xml:16:13-84
+156            android:directBootAware="true"
+156-->[com.google.firebase:firebase-common:20.0.0] C:\Users\faculty\.gradle\caches\transforms-3\1507957180e952ee9a04ae29a45f8054\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+157            android:exported="false" >
+157-->[com.google.firebase:firebase-crashlytics:18.2.6] C:\Users\faculty\.gradle\caches\transforms-3\14b884fdad809d5dea3761edf0908c0f\transformed\jetified-firebase-crashlytics-18.2.6\AndroidManifest.xml:17:13-37
+158            <meta-data
+158-->[com.google.firebase:firebase-crashlytics:18.2.6] C:\Users\faculty\.gradle\caches\transforms-3\14b884fdad809d5dea3761edf0908c0f\transformed\jetified-firebase-crashlytics-18.2.6\AndroidManifest.xml:18:13-20:85
+159                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+159-->[com.google.firebase:firebase-crashlytics:18.2.6] C:\Users\faculty\.gradle\caches\transforms-3\14b884fdad809d5dea3761edf0908c0f\transformed\jetified-firebase-crashlytics-18.2.6\AndroidManifest.xml:19:17-115
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-crashlytics:18.2.6] C:\Users\faculty\.gradle\caches\transforms-3\14b884fdad809d5dea3761edf0908c0f\transformed\jetified-firebase-crashlytics-18.2.6\AndroidManifest.xml:20:17-82
+161            <meta-data
+161-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\dc1577810767a55670725477545a57b2\transformed\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:30:13-32:85
+162                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+162-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\dc1577810767a55670725477545a57b2\transformed\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:31:17-139
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\dc1577810767a55670725477545a57b2\transformed\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:32:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\faculty\.gradle\caches\transforms-3\792ff8f121baf2f84c030aa60e327b77\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+165                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+165-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\faculty\.gradle\caches\transforms-3\792ff8f121baf2f84c030aa60e327b77\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\faculty\.gradle\caches\transforms-3\792ff8f121baf2f84c030aa60e327b77\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+167        </service>
+168        <service
+168-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\264705a18732f558a8c4d4218db9873f\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
+169            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+169-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\264705a18732f558a8c4d4218db9873f\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
+170            android:exported="false" >
+170-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\264705a18732f558a8c4d4218db9873f\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
+171            <meta-data
+171-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\264705a18732f558a8c4d4218db9873f\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
+172                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+172-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\264705a18732f558a8c4d4218db9873f\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
+173                android:value="cct" />
+173-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\264705a18732f558a8c4d4218db9873f\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
+174        </service>
+175        <service
+175-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\7bd108bdb44643a264e548f8c6090e06\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
+176            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+176-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\7bd108bdb44643a264e548f8c6090e06\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
+177            android:exported="false"
+177-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\7bd108bdb44643a264e548f8c6090e06\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
+178            android:permission="android.permission.BIND_JOB_SERVICE" >
+178-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\7bd108bdb44643a264e548f8c6090e06\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
+179        </service>
+180
+181        <receiver
+181-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\7bd108bdb44643a264e548f8c6090e06\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
+182            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+182-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\7bd108bdb44643a264e548f8c6090e06\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
+183            android:exported="false" />
+183-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\faculty\.gradle\caches\transforms-3\7bd108bdb44643a264e548f8c6090e06\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
+184
+185        <provider
+185-->[com.google.firebase:firebase-common:20.0.0] C:\Users\faculty\.gradle\caches\transforms-3\1507957180e952ee9a04ae29a45f8054\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+186            android:name="com.google.firebase.provider.FirebaseInitProvider"
+186-->[com.google.firebase:firebase-common:20.0.0] C:\Users\faculty\.gradle\caches\transforms-3\1507957180e952ee9a04ae29a45f8054\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+187            android:authorities="com.aiosleeve.aiosleeve.firebaseinitprovider"
+187-->[com.google.firebase:firebase-common:20.0.0] C:\Users\faculty\.gradle\caches\transforms-3\1507957180e952ee9a04ae29a45f8054\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+188            android:directBootAware="true"
+188-->[com.google.firebase:firebase-common:20.0.0] C:\Users\faculty\.gradle\caches\transforms-3\1507957180e952ee9a04ae29a45f8054\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+189            android:exported="false"
+189-->[com.google.firebase:firebase-common:20.0.0] C:\Users\faculty\.gradle\caches\transforms-3\1507957180e952ee9a04ae29a45f8054\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+190            android:initOrder="100" />
+190-->[com.google.firebase:firebase-common:20.0.0] C:\Users\faculty\.gradle\caches\transforms-3\1507957180e952ee9a04ae29a45f8054\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+191
+192        <activity
+192-->[com.google.android.gms:play-services-base:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\f4dccca2f195649df379870cbfc7725a\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:20:9-22:45
+193            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+193-->[com.google.android.gms:play-services-base:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\f4dccca2f195649df379870cbfc7725a\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:20:19-85
+194            android:exported="false"
+194-->[com.google.android.gms:play-services-base:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\f4dccca2f195649df379870cbfc7725a\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:22:19-43
+195            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+195-->[com.google.android.gms:play-services-base:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\f4dccca2f195649df379870cbfc7725a\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:21:19-78
+196
+197        <receiver
+197-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:29:9-33:20
+198            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+198-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:30:13-85
+199            android:enabled="true"
+199-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:31:13-35
+200            android:exported="false" >
+200-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:32:13-37
+201        </receiver>
+202
+203        <service
+203-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:35:9-38:40
+204            android:name="com.google.android.gms.measurement.AppMeasurementService"
+204-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:36:13-84
+205            android:enabled="true"
+205-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:37:13-35
+206            android:exported="false" />
+206-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:38:13-37
+207        <service
+207-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:39:9-43:72
+208            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+208-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:40:13-87
+209            android:enabled="true"
+209-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:41:13-35
+210            android:exported="false"
+210-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:42:13-37
+211            android:permission="android.permission.BIND_JOB_SERVICE" />
+211-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\faculty\.gradle\caches\transforms-3\845da1ecadb5c11dd07e35a57df888d9\transformed\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:43:13-69
+212
+213        <meta-data
+213-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\5ae9d1a2c1d0348d77058cdd37b7e2c9\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+214            android:name="com.google.android.gms.version"
+214-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\5ae9d1a2c1d0348d77058cdd37b7e2c9\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+215            android:value="@integer/google_play_services_version" />
+215-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\faculty\.gradle\caches\transforms-3\5ae9d1a2c1d0348d77058cdd37b7e2c9\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+216
+217        <provider
+217-->[androidx.emoji2:emoji2:1.0.0] C:\Users\faculty\.gradle\caches\transforms-3\ed5b4d434b2c106dc2f8d9521ec0a76f\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+218            android:name="androidx.startup.InitializationProvider"
+218-->[androidx.emoji2:emoji2:1.0.0] C:\Users\faculty\.gradle\caches\transforms-3\ed5b4d434b2c106dc2f8d9521ec0a76f\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+219            android:authorities="com.aiosleeve.aiosleeve.androidx-startup"
+219-->[androidx.emoji2:emoji2:1.0.0] C:\Users\faculty\.gradle\caches\transforms-3\ed5b4d434b2c106dc2f8d9521ec0a76f\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+220            android:exported="false" >
+220-->[androidx.emoji2:emoji2:1.0.0] C:\Users\faculty\.gradle\caches\transforms-3\ed5b4d434b2c106dc2f8d9521ec0a76f\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+221            <meta-data
+221-->[androidx.emoji2:emoji2:1.0.0] C:\Users\faculty\.gradle\caches\transforms-3\ed5b4d434b2c106dc2f8d9521ec0a76f\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+222                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+222-->[androidx.emoji2:emoji2:1.0.0] C:\Users\faculty\.gradle\caches\transforms-3\ed5b4d434b2c106dc2f8d9521ec0a76f\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+223                android:value="androidx.startup" />
+223-->[androidx.emoji2:emoji2:1.0.0] C:\Users\faculty\.gradle\caches\transforms-3\ed5b4d434b2c106dc2f8d9521ec0a76f\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+224            <meta-data
+224-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\faculty\.gradle\caches\transforms-3\18fc2d7edc57f173056917c1809cc41f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+225                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+225-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\faculty\.gradle\caches\transforms-3\18fc2d7edc57f173056917c1809cc41f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+226                android:value="androidx.startup" />
+226-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\faculty\.gradle\caches\transforms-3\18fc2d7edc57f173056917c1809cc41f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+227        </provider>
+228    </application>
+229
+230</manifest>

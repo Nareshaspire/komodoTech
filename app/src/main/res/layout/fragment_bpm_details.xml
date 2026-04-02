@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background_dashboard">
+
+    <RelativeLayout
+        android:id="@+id/fragment_bpm_details_main_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/custom_header_color"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/fragment_bpm_details_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:focusable="false"
+            android:id="@+id/fragment_bpm_details_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="@string/tital_bpm_details"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/fragment_bpm_details_graph_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_bpm_details_main_layout"
+        android:layout_above="@+id/fragment_bpm_details_linear_bottom"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/button_enabled_color" />
+
+    <LinearLayout
+        android:id="@+id/fragment_bpm_details_linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/custom_header_color"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fragment_bpm_details_txt_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0\nStep"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp"/>
+
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:background="@color/button_disabled_color" />
+
+        <TextView
+            android:id="@+id/fragment_bpm_details_txt_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0\nMeter"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp"/>
+
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:background="@color/button_disabled_color" />
+
+        <TextView
+            android:id="@+id/fragment_bpm_details_txt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

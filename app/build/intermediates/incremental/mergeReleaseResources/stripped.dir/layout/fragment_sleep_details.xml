@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/vertical_gradient_full_screen">
+
+    <RelativeLayout
+        android:id="@+id/fragment_sleep_details_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/fragment_sleep_details_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/icon_back"
+            android:tint="@color/mandatory_color"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/fragment_sleep_details_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/text_sleep_all_caps"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_sleep_cardview_bpm"
+            android:layout_above="@+id/fragment_sleep_details_relative_total_sleep"
+            android:layout_below="@+id/fragment_sleep_details_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background_rounded_sleep_bg"
+            android:layout_margin="@dimen/_16sdp"
+            >
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/fragment_sleep_details_graph_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/fragment_sleep_details_txt_start_time" />
+
+            <TextView
+                android:id="@+id/fragment_sleep_details_txt_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_30ssp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="11:54:00"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/fragment_sleep_details_txt_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="11:54:00"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_10ssp" />
+
+            <ProgressBar
+                android:id="@+id/fragment_sleep_details_progress_bar"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="@dimen/_4sdp"
+                android:visibility="gone"
+                tools:ignore="UnusedAttribute"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_sleep_details_relative_total_sleep"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/button_background_rounded_sleep_item"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/fragment_sleep_details_total_sleep_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total Sleep Time:"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_sleep_details_txt_total_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_sleep_details_total_sleep_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="00 Hours : 00 Mins"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_10ssp" />
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/fragment_sleep_details_relative_total_sleep"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:layout_marginBottom="@dimen/_10sdp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/fragment_sleep_details_txt_awake"-->
+<!--            android:layout_width="@dimen/_60sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:layout_marginLeft="@dimen/_25sdp"-->
+<!--            android:background="@drawable/blue_circle"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/label_awake"-->
+<!--            android:textColor="@color/color_black"-->
+<!--            android:textSize="@dimen/_10ssp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/fragment_sleep_details_txt_lighter"-->
+<!--            android:layout_width="@dimen/_60sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:background="@drawable/red_circle"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/label_lighter"-->
+<!--            android:textColor="@color/color_black"-->
+<!--            android:textSize="@dimen/_10ssp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/fragment_sleep_details_txt_light"-->
+<!--            android:layout_width="@dimen/_60sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="@dimen/_25sdp"-->
+<!--            android:background="@drawable/green_circle"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/label_light"-->
+<!--            android:textColor="@color/color_black"-->
+<!--            android:textSize="@dimen/_10ssp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/fragment_sleep_details_txt_deeper"-->
+<!--            android:layout_width="@dimen/_60sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:layout_below="@+id/fragment_sleep_details_txt_awake"-->
+<!--            android:layout_marginLeft="@dimen/_25sdp"-->
+<!--            android:layout_marginTop="@dimen/_5sdp"-->
+<!--            android:background="@drawable/red_circle"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/label_deeper"-->
+<!--            android:textColor="@color/color_black"-->
+<!--            android:textSize="@dimen/_10ssp" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/fragment_sleep_details_txt_deep"-->
+<!--            android:layout_width="@dimen/_60sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:layout_below="@+id/fragment_sleep_details_txt_awake"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="@dimen/_5sdp"-->
+<!--            android:background="@drawable/green_circle"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/label_deep"-->
+<!--            android:textColor="@color/color_black"-->
+<!--            android:textSize="@dimen/_10ssp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/fragment_sleep_details_txt_total_min"-->
+<!--            android:layout_width="@dimen/_60sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:layout_below="@+id/fragment_sleep_details_txt_awake"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="@dimen/_5sdp"-->
+<!--            android:layout_marginRight="@dimen/_25sdp"-->
+<!--            android:background="@drawable/blue_circle"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/label_total_min"-->
+<!--            android:textColor="@color/color_black"-->
+<!--            android:textSize="@dimen/_10ssp" />-->
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>
+
+

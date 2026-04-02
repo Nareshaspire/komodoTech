@@ -1,0 +1,18 @@
+<dependencies>
+  <compile
+      roots="C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android@@:MPChartLib::debug,androidx.annotation:annotation:1.0.0@jar">
+    <dependency
+        name="C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android@@:MPChartLib::debug"
+        simpleName="com.github.philjay:MPChartLib"/>
+    <dependency
+        name="androidx.annotation:annotation:1.0.0@jar"/>
+  </compile>
+  <package
+      roots="C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android@@:MPChartLib::debug,androidx.annotation:annotation:1.0.0@jar">
+    <dependency
+        name="C:\Users\faculty\Desktop\Keil\AIOSleeve_Android-20220721T193132Z-001\AIOSleeve_Android@@:MPChartLib::debug"
+        simpleName="com.github.philjay:MPChartLib"/>
+    <dependency
+        name="androidx.annotation:annotation:1.0.0@jar"/>
+  </package>
+</dependencies>

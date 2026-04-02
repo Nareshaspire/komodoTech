@@ -1,0 +1,264 @@
+<resources>
+    <!--<string name="app_name">KomodoTec</string>-->
+    <string name="app_name">AIO Sleeve</string>
+
+    <string name="fragment_dashboard">Dashboard</string>
+    <string name="activity_login">Sign In</string>
+    <string name="activity_signup">Sign up</string>
+    <string name="create_account">Create Account</string>
+    <string name="fragment_settings">Save</string>
+    <string name="alert_title">KomodoTec</string>
+
+    <!--Global-->
+    <string name="no_internet_msg">No Network. Please check your network and try again.</string>
+    <string name="alert_exit">Are you sure you want to exit?</string>
+    <string name="text_confirmation_logout">Are you sure you want to logout?</string>
+    <string name="text_confirmation_delete_account">Are you sure you want to delete account?</string>
+    <string name="text_confirmation_call_survivor">Are you sure you want to call %1$s!?</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="text_no_result_found">No Result Found</string>
+
+    <!--Left Navigation Items For Admin App-->
+    <string name="left_nav_home">Home</string>
+    <string name="left_nav_manage_device">Manage Device</string>
+    <string name="left_nav_about_us">About us</string>
+    <string name="left_nav_settings">Settings</string>
+    <string name="left_nav_logout">Logout</string>
+    <string name="left_nav_feedback">Feedback</string>
+    <string name="left_nav_my_feedback">My Feedback</string>
+
+    <!--Login Screen-->
+    <string name="text_login_header">Sign In</string>
+    <string name="text_create_your_account">CREATE YOUR ACCOUNT</string>
+    <string name="text_login_email">Email</string>
+    <string name="text_login_user">Username</string>
+    <string name="text_login_password">Password</string>
+    <string name="text_login_forgot_password">Forgot Password ?</string>
+    <string name="text_login_forgot_password_textview_label"><u>Forgot Password</u></string>
+
+    <string name="text_login_button_signin">Sign In</string>
+    <string name="text_login_signup_here">Don\'t have an account? Sign up Here</string>
+    <string name="text_login_signin_here">Already have an account? Sign in Here</string>
+
+    <!-- new string login parth-->
+    <string name="txt_no_account">No account? Register Here</string>
+
+    <!--Forget Password-->
+    <string name="text_forget_password_popup">Please enter your email to get password.</string>
+    <string name="text_forget_password_header">Forgot Password?</string>
+    <string name="text_email_hint">Enter email</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_ok">OK</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+
+    <!--Signup Screen-->
+    <string name="text_signup_header">Sign Up</string>
+    <string name="text_signup_user">Username*</string>
+    <string name="text_signup_hint_name">Name</string>
+    <string name="text_signup_hint_email">Email*</string>
+    <string name="text_signup_hint_bob">Date of birth</string>
+    <string name="text_signup_hint_gender">Gender</string>
+    <string name="text_signup_hint_metric">Imperial/Metric</string>
+    <string name="text_signup_hint_weight">Weight</string>
+    <string name="text_signup_hint_height">Height</string>
+    <string name="text_signup_hint_town">City/Town</string>
+    <string name="text_signup_hint_dob">Date of Birth</string>
+    <string name="text_signup_hint_phone_number">Phone No.</string>
+    <string name="text_signup_hint_password">Password*</string>
+    <string name="text_signup_hint_confirm_password">Confirm Password</string>
+    <string name="text_signup_button_signup">Sign Up</string>
+    <string name="text_signup_login_here">Already have an account? Login Here</string>
+    <string name="text_signup_hint_about_me">About Me</string>
+
+    <string name="text_signup_empty_name">Please enter your name.</string>
+    <string name="text_signup_empty_email">Please enter your email address.</string>
+    <string name="text_signup_invalid_email">Please enter your valid email address.</string>
+    <string name="text_signup_empty_dob">Please select your birth date.</string>
+    <string name="text_signup_empty_phone_number">Please enter your mobile number.</string>
+    <string name="text_signup_empty_password">Please enter your password.</string>
+    <string name="text_signup_empty_old_password">Please enter your old password.</string>
+    <string name="text_signup_empty_confirm_password">Please enter your confirm password.</string>
+    <string name="text_signup_mismatch_password">Password and confirm password should be same.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Settings Screen-->
+
+    <string name="text_settings_empty_name">Please enter your name.</string>
+    <string name="text_settings_empty_email">Please enter your email address.</string>
+    <string name="text_settings_invalid_email">Please enter your valid email address.</string>
+    <string name="text_settings_empty_dob">Please select your birth date.</string>
+    <string name="text_settings_empty_gender">Please select/enter your gender.</string>
+    <string name="text_settings_empty_metric">Please Select your metric/imperial.</string>
+    <string name="text_settings_empty_weight">Please enter your weight.</string>
+    <string name="text_settings_empty_height">Please enter select your height.</string>
+    <string name="text_settings_empty_town">Please enter your town.</string>
+    <string name="text_settings_mandatory_error">* Mandatory Fields</string>
+    <string name="default_pulse_rate">--</string>
+
+    <string name="label_pulse_oximeter_vertical_axis">[%]</string>
+
+    <string name="alert_bpm_start">BPM is going on, Please stop it first.</string>
+    <string name="alert_sleep_start">Sleep is going on, Please stop it first.</string>
+    <string name="alert_ecg_start">ECG/HRV is going on, Please stop it first.</string>
+    <string name="alert_hrv_start">BPM is going on, Please stop it first.</string>
+    <string name="alert_connect_device">Please connect komodotech device first!</string>
+    <string name="alert_disconnect_device">Your device is disconnected please connect for continue BPM/ECG/SLEEP feature!</string>
+
+    <!--HRV Screen-->
+    <string name="text_hrv_popup_header">Please, do not move while measuring!</string>
+    <string name="text_hrv_popup_message">Are you sure to try HRV test for 2 minutes?</string>
+    <string name="text_hrv_popup_result_message">Caution: We didn\'t get any values from device. Please try again.</string>
+
+    <string name="alert_hrv_0">Caution: We did\'t get any values from device. Please try agian.</string>
+    <string name="alert_hrv_1">Caution: Don’t perform any physical activity. Take a rest day and try to get your stress under control</string>
+    <string name="alert_hrv_2">Not looking good – It seems you might have high mental and/or physical stress. Optimize your daily routine to improve your HRV score. Or you might need to recover from your last workout</string>
+    <string name="alert_hrv_3">On the right track – your body is functioning okay but there are still improvements you could make in your daily routine – proceed with caution</string>
+    <string name="alert_hrv_4">Close to optimal – you’re almost fully recovered and stress free. Body is operating fairly efficiently. Just a few more tweaks and you’ll be able to go 100%</string>
+    <string name="alert_hrv_5">Optimal – your body is functioning very well, physical and mental stress is under control and you’re ready to tackle the days activities</string>
+    <string name="alert_hrv_any">Go hard – in peak condition and you can give it 110% while training today.</string>
+
+    <string name="lbl_bluetooth_enable">Bluetooth Enable</string>
+    <string name="msg_ble_enable">Please enable bluetooth to use BLE in this application.</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="lbl_exit">Exit</string>
+
+    <string name="tital_dashboard">DASHBOARD</string>
+    <string name="tital_about_us">ABOUT US</string>
+    <string name="tital_settings">SETTINGS</string>
+    <string name="tital_manage_device">MANAGE DEVICE</string>
+    <string name="tital_bpm">BPM</string>
+    <string name="label_bpm">0 \n BPM</string>
+    <string name="tital_ecg">ECG</string>
+    <string name="label_ecg">0 \n ECG</string>
+    <string name="tital_spo2">SPO2</string>
+    <string name="label_spo2">0 \n SpO2</string>
+    <string name="tital_met">MET</string>
+    <string name="label_met">0 \n MET</string>
+    <string name="tital_hrv">HRV</string>
+    <string name="label_hrv">0 \n HRV</string>
+    <string name="tital_home">HOME</string>
+    <string name="tital_ecg_hrv">ECG/HRV</string>
+    <string name="tital_sleep">SLEEP</string>
+    <string name="tital_setting">SETTINGS</string>
+    <string name="tital_bpm_details">BPM History</string>
+    <string name="tital_ecg_details">ECG History</string>
+    <string name="tital_sleep_details">SLEEP History</string>
+    <string name="tital_ecg_activity">ECG Activity</string>
+    <string name="tital_bpm_activity">BPM Activity</string>
+    <string name="tital_sleep_activity">SLEEP Activity</string>
+
+    <string name="lbl_spo2">SpO2</string>
+    <string name="lbl_met">MET</string>
+    <string name="lbl_steps">Steps</string>
+    <string name="lbl_meters">Meters</string>
+    <string name="lbl_mins">Mins</string>
+    <string name="lbl_total_time">%1$s \nMins : Sec</string>
+    <string name="lbl_total_step">%1$s \nSteps</string>
+    <string name="lbl_total_distance">%1$s \nMeter</string>
+    <string name="lbl_total_bpm">%1$s \nBPM</string>
+    <string name="lbl_total_hrv">%1$s \nHRV</string>
+    <string name="lbl_total_met">%1$s \nMET</string>
+    <string name="lbl_scanning_device">Scanning devices...</string>
+    <string name="lbl_total_sleep_time">Total Sleep Time:</string>
+
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_hrv">HRV</string>
+
+    <string name="label_awake">%1$s \n Awake</string>
+    <string name="label_lighter">%1$s \n Lighter</string>
+    <string name="label_light">%1$s \n Light</string>
+    <string name="label_deep">%1$s \n Deep</string>
+    <string name="label_deeper">%1$s \n Deeper</string>
+    <string name="label_total_min">%1$s \n mins</string>
+
+
+    <string name="text_signup_hint_medication">Medication</string>
+    <string name="text_signup_hint_heart_condition">Heart Condition</string>
+    <string name="btn_Submit">Submit</string>
+    <string name="popup_lbl_medication_header">Please enter your medicine names.</string>
+    <string name="popup_lbl_taken_medicine_header">Please select the medicine you have taken.</string>
+    <string name="popup_lbl_first_medication_hint">Enter first medicine name</string>
+    <string name="popup_lbl_second_medication_hint">Enter second medicine name</string>
+    <string name="popup_lbl_third_medication_hint">Enter third medicine name</string>
+    <string name="btn_medication">Taken \n Medicine</string>
+
+    <string name="label_quick_scan">Quick Scan</string>
+    <string name="label_quick_scan_all_caps">QUICK SCAN</string>
+
+    <string name="label_activity_mode">Activity Mode</string>
+    <string name="label_activity_mode_all_caps">ACTIVITY MODE</string>
+    <string name="label_sleep_mode_all_caps">SLEEP MODE</string>
+
+    <string name="label_health_mode">Health Mode</string>
+    <string name="label_health_mode_all_caps">HEALTH MODE</string>
+    <string name="text_activity_history_all_caps">ACTIVITY HISTORY</string>
+
+    <string name="text_home">HOME</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_settings">Settings</string>
+    <string name="text_guides">Guides</string>
+    <string name="text_privacy">Privacy</string>
+    <string name="text_support">Support</string>
+    <string name="text_notifications">Notifications</string>
+    <string name="text_on">ON</string>
+    <string name="text_off">OFF</string>
+    <string name="text_account">Account</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_scan_connect_all_caps">SCAN/CONNECT</string>
+    <string name="text_connected_all_caps">CONNECTED</string>
+
+    <string name="two_digit_after_decimal">%.2f</string>
+    <string name="one_digit_after_decimal">%.1f</string>
+
+    <string name="text_alert_changing_tab_when_locked">Stop the on going process before moving to another tab.</string>
+    <string name="text_my_account">My Account</string>
+    <string name="text_disconnect_all_caps">DISCONNECT</string>
+
+    <string name="text_health_mode_lock_alert">HRV is going on, Please stop it first.</string>
+    <string name="text_quick_scan_lock_alert">Quick scan is going on, Please stop it first.</string>
+    <string name="text_activity_mode_lock_alert">BPM is going on, Please stop it first.</string>
+    <string name="text_sleep_mode_lock_alert">Sleep is going on, Please stop it first.</string>
+
+
+    <string name="text_dynamic_feet_inch">%1$s ft %2$s inch</string>
+
+    <string name="text_met_postfix">%1$s MET</string>
+    <string name="text_min_postfix">%.2f min</string>
+    <string name="text_comma_separator">%1$s, %2$s</string>
+    <string name="text_dash_separator">%1$s - %2$s</string>
+
+    <string name="text_percentage_postfix">%1$s\%</string>
+    <string name="text_no_data_found">No data found</string>
+
+    <string name="text_last_health_score">LAST HEALTH SCORE</string>
+
+    <string name="text_fragment_home_sleep_m">%2dm</string>
+    <string name="text_fragment_home_sleep_h_m">%2dh %2dm</string>
+    <string name="text_health_mode_history">Health Mode History</string>
+    <string name="text_heart_rate_variability">Heart Rate Variability</string>
+    <string name="text_ecg_ekg_history">ECG / EKG History</string>
+
+    <string name="text_today">Today</string>
+    <string name="text_yesterday">Yesterday</string>
+
+    <string name="label_hours_and_min">%2d hours %2d minutes</string>
+    <string name="label_hours_and_min_sleep_details">%02d Hours : %02d Mins</string>
+
+    <string name="text_sleep_history">SLEEP History</string>
+    <string name="text_sleep_all_caps">SLEEP</string>
+
+    <string name="text_km">km</string>
+    <string name="text_mile">mile</string>
+
+    <string name="notification_channel_id">M_CH_ID</string>
+
+    <string name="text_version_name_prefix">Version: %1$s</string>
+</resources>

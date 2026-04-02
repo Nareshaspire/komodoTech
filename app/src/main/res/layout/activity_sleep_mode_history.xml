@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vertical_gradient_full_screen">
+
+    <RelativeLayout
+        android:id="@+id/fragment_ecg_main_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/fragment_bpm_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/icon_back"
+            android:tint="@color/mandatory_color"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:id="@+id/fragment_setting_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/text_sleep_history"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/fragment_bpm_imageview_add_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/icon_filter"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_bpm_list_txt_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_ecg_main_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:textColor="@color/color_gray_5"
+        android:textSize="@dimen/_11ssp"
+        tools:text="2021-03-01" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_bpm_list_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/raw_sleep_history_item"
+android:layout_marginTop="@dimen/_8sdp"
+        android:layout_below="@+id/fragment_bpm_list_txt_data" />
+
+    <TextView
+        android:id="@+id/fragment_bpm_list_txt_scanning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/text_no_data_found"
+        android:textColor="@color/color_white" />
+
+</RelativeLayout>
+

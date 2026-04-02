@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_13sdp"
+            android:background="@drawable/button_background_scan_device"
+            android:padding="@dimen/_13sdp">
+
+            <TextView
+                android:id="@+id/custom_device_list_row_textview_device_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:focusable="false"
+                android:text="BRIGHTON_HR"
+                android:textStyle="bold"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/custom_device_list_row_button_connect"
+                app:layout_constraintEnd_toStartOf="@+id/custom_device_list_row_button_connect"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/custom_device_list_row_button_connect" />
+
+            <TextView
+                android:id="@+id/custom_device_list_row_textview_device_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_device_list_row_textview_device_name"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:text="BRIGHTON_HR"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_16ssp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/custom_device_list_row_textview_device_name"
+                app:layout_constraintTop_toBottomOf="@+id/custom_device_list_row_textview_device_name"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/custom_device_list_row_button_connect"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/button_background_scan_device_blue"
+                android:focusable="false"
+                android:text="@string/text_connect"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteY="20dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

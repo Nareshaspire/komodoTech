@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\faculty\\Desktop\\Keil\\AIOSleeve_Android-20220721T193132Z-001\\AIOSleeve_Android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\faculty\\.gradle\\caches\\transforms-3\\29f8102b6cca5bd26581e81e8db392ce\\transformed\\material-1.4.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,110",
+                        "endColumns": "54,61",
+                        "endOffsets": "105,167"
+                    }
+                }
+            ]
+        }
+    ]
+}

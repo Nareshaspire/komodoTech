@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background_dashboard">
+
+    <RelativeLayout
+        android:id="@+id/fragment_ecg_main_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/custom_header_color"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/fragment_bpm_imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:focusable="false"
+            android:id="@+id/fragment_bpm_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="@string/tital_ecg_details"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/fragment_bpm_imageview_add_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/icon_filter"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_bpm_list_txt_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_ecg_main_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_8sdp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_bpm_list_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_below="@+id/fragment_bpm_list_txt_data" />
+
+    <TextView
+        android:id="@+id/fragment_bpm_list_txt_scanning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No data found"
+        android:textColor="@color/color_white" />
+
+</RelativeLayout>
+

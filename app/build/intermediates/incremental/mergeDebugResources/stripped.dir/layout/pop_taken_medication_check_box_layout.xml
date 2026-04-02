@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/raw_hrv_popup_relative_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/raw_hrv_popup_relative_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_disabled_color">
+
+                <TextView
+                    android:id="@+id/pop_taken_medicine_checkbox_layout_textview_enter_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_10odp"
+                    android:textAlignment="center"
+                    android:text="@string/popup_lbl_taken_medicine_header"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/raw_hrv_popup_relative_header"
+                android:background="@color/color_white">
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:layout_alignParentTop="true"
+                     android:id="@+id/pop_taken_medicine_checkbox_layout_recyclerview"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/_150sdp">
+                 </androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_below="@+id/pop_taken_medicine_checkbox_layout_recyclerview"
+                    android:id="@+id/pop_taken_medicine_checkbox_layout_buttons_layout"
+                    android:layout_marginTop="@dimen/_10odp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                    <Button
+                        android:id="@+id/pop_taken_medicine_checkbox_layout_button_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_disabled"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/btn_Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <Button
+                        android:id="@+id/pop_taken_medicine_checkbox_layout_button_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_disabled"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/text_cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/_16ssp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

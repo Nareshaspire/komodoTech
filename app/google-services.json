@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "441318632520",
+    "firebase_url": "https://komodotec-kiosk.firebaseio.com",
+    "project_id": "komodotec-kiosk",
+    "storage_bucket": "komodotec-kiosk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441318632520:android:5169a01dad9796aa703c7d",
+        "android_client_info": {
+          "package_name": "com.aiosleeve.aiosleeve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441318632520-0f19257a8epu17dqntrbd3an3k4buq0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaM8XQ6rMluVwW_Lsw4awrpIFD0dMI1SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441318632520-0f19257a8epu17dqntrbd3an3k4buq0s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "441318632520-mukbhcq7gdparvm10vlsa2couemlh07q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.KIOSK.HealthBarKIOSK"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

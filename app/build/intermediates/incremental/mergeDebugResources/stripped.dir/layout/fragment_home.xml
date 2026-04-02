@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentHome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/activity_main_main_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/fragment_home_relative_layout_connect_disconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fragment_home_button_scan_connect"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shadow_white_fragment_home_button"
+                    android:drawableStart="@drawable/ic_bluetooth"
+                    android:focusable="false"
+                    android:paddingStart="@dimen/_13sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:text="@string/text_scan_connect_all_caps"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/fragment_home_button_scan_disconnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shadow_gray_fragment_home_button"
+                    android:focusable="false"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_13sdp"
+                    android:text="@string/text_disconnect_all_caps"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fragment_home_relative_layout_connect_disconnect"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_home_top_old_rl"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_linear_group_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fragment_home_cardview_bpm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_5sdp"
+                            app:cardBackgroundColor="@color/button_disabled_color"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            app:cardUseCompatPadding="true">
+
+                            <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/_13sdp">
+
+                                <ImageView
+                                    android:id="@+id/img_heart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/icon_heart" />
+
+                                <TextView
+                                    android:id="@+id/fragment_home_textview_bpm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_heart"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:text="BPM"
+                                    android:textColor="@color/button_enabled_color"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                            <!--</RelativeLayout>-->
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fragment_home_cardview_ecg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_5sdp"
+                            app:cardBackgroundColor="@color/button_disabled_color"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            app:cardUseCompatPadding="true">
+
+                            <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/_13sdp">
+
+                                <ImageView
+                                    android:id="@+id/img_ecg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/icon_ecg" />
+
+                                <TextView
+                                    android:id="@+id/fragment_home_textview_ecg_hrv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_ecg"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:text="ECG/HRV"
+                                    android:textColor="@color/button_enabled_color"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+                                <!--</RelativeLayout>-->
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_linear_group_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fragment_home_linear_group_1"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fragment_home_cardview_sleep"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/button_disabled_color"
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/_13sdp">
+
+                                <ImageView
+                                    android:id="@+id/img_sleep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/icon_sleep" />
+
+                                <TextView
+                                    android:id="@+id/fragment_home_textview_sleep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_sleep"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:text="Sleep"
+                                    android:textColor="@color/button_enabled_color"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fragment_home_cardview_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/button_disabled_color"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/_13sdp">
+
+                                <ImageView
+                                    android:id="@+id/img_setting"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/icon_settings" />
+
+                                <TextView
+                                    android:id="@+id/fragment_home_textview_settings"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_setting"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:text="Setting"
+                                    android:textColor="@color/button_enabled_color"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_linear_group_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fragment_home_linear_group_2"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fragment_home_cardview_long_term_ecg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/button_disabled_color"
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/_13sdp">
+
+                                <ImageView
+                                    android:id="@+id/img_long_term_ecg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/icon_ecg_unselected" />
+
+                                <TextView
+                                    android:id="@+id/fragment_home_textview_long_term_ecg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_long_term_ecg"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:text="Long term ECG"
+                                    android:textColor="@color/button_enabled_color"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fragment_home_cardview_medication_taken"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/button_disabled_color"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_13sdp">
+
+                                <ImageView
+                                    android:id="@+id/img_medication_taken"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/icon_settings" />
+
+                                <TextView
+                                    android:id="@+id/fragment_home_textview_medication_taken"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img_medication_taken"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:text="Medication Taken"
+                                    android:textColor="@color/button_enabled_color"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fragment_home_health_mode_summary_and_latest_workout_buttons_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fragment_home_top_old_rl"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@id/fragment_home_guideline_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:background="@drawable/bg_shadow_white_fragment_home_tile"
+
+                        android:padding="@dimen/_10sdp"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/fragment_home_guideline_2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/relativeLayout">
+
+                        <TextView
+                            android:id="@+id/fragment_home_health_mode_summary_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:drawableStart="@drawable/ic_heart"
+                            android:gravity="center"
+                            android:text="HEALTH MODE SUMMARY"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_7sdp"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fragment_home_health_mode_summary_center_cl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fragment_home_health_mode_summary_title"
+                            android:layout_centerHorizontal="true"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/fragment_home_health_mode_heart_rate_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="N/A"
+                                android:textAllCaps="true"
+                                android:textColor="@color/mandatory_color"
+                                android:textSize="@dimen/_36sdp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/fragment_home_health_up_down_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:src="@drawable/ic_up"
+                                app:layout_constraintStart_toEndOf="@+id/fragment_home_health_mode_heart_rate_value"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_health_previous_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:text="0.0"
+                                android:textColor="@color/color_green"
+                                android:textSize="@dimen/_8sdp"
+                                app:layout_constraintStart_toEndOf="@+id/fragment_home_health_up_down_image"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <RatingBar
+                                android:id="@+id/fragment_home_health_mode_rating_bar"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:scaleX="0.80"
+                                android:scaleY="0.85"
+
+                                android:stepSize="1.0"
+                                android:theme="@style/RatingBarHomeScreen"
+                                android:transformPivotX="0dp"
+                                android:transformPivotY="0dp"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_health_up_down_image"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_health_up_down_image"
+                                tools:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_health_date_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/fragment_home_health_mode_summary_center_cl"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:text="No Data"
+                                android:textColor="@color/txt_register_color"
+                                android:textSize="@dimen/_6sdp"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_health_mode_rating_bar"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_health_up_down_image" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fragment_home_daily_trend_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fragment_home_health_mode_summary_center_cl"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="-6dp"
+                            android:text="Daily Trend"
+                            android:textColor="@color/txt_register_color"
+                            android:textSize="@dimen/_6sdp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.github.mikephil.charting.charts.ScatterChart
+                            android:id="@+id/fragment_home_health_mode_graph_view"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_above="@+id/fragment_health_mode_summary_details"
+                            android:layout_marginBottom="-4dp"
+                            android:layout_below="@+id/fragment_home_daily_trend_label"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_4sdp" />
+
+                        <TextView
+                            android:id="@+id/fragment_health_mode_summary_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/button_background_detail_pink"
+                            android:drawableEnd="@drawable/ic_detail"
+                            android:drawablePadding="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:layout_alignParentBottom="true"
+                            android:paddingStart="@dimen/_13sdp"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:text="Details"
+                            android:textAlignment="center"
+
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/_8ssp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:background="@drawable/bg_shadow_white_fragment_home_tile"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/fragment_home_guideline_2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/fragment_home_latest_workout_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="LATEST WORKOUT"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_7sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/fragment_home_no_activity_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/fragment_home_activity_time_value"
+                            android:layout_alignBottom="@+id/fragment_home_activity_time_value"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/ic_run"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/fragment_home_activity_time_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fragment_home_latest_workout_label"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_13sdp"
+                            android:gravity="center"
+                            android:text="No Activity"
+                            android:textAllCaps="true"
+                            android:textColor="@color/txt_register_color"
+                            android:textSize="@dimen/_7ssp"
+                            tools:text="WORKOUT, 12:59 - 12:59" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fragment_home_latest_workout_main_cl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment_home_activity_time_value"
+                            android:layout_marginTop="@dimen/_8sdp">
+
+                            <androidx.constraintlayout.widget.Guideline
+                                android:id="@+id/fragment_home_guideline_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintGuide_percent="0.5" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_activity_intensity_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="N/A"
+                                android:textAllCaps="true"
+                                android:textColor="@color/sky_color"
+                                android:textSize="@dimen/_30ssp"
+                                android:textStyle="bold"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/fragment_home_activity_intensity_cl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_9sdp"
+                                app:layout_constraintBottom_toBottomOf="@+id/fragment_home_activity_intensity_value"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_guideline_1"
+                                app:layout_constraintTop_toTopOf="@+id/fragment_home_activity_intensity_value">
+
+                                <ImageView
+                                    android:id="@+id/fragment_home_activity_intensity_image"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:src="@drawable/ic_run_fast"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/fragment_home_activity_intensity_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:text="Activity Intensity"
+                                    android:textColor="@color/txt_register_color"
+                                    android:textSize="@dimen/_7ssp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/fragment_home_activity_intensity_image" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <View
+                                android:id="@+id/fragment_home_view_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@color/color_gray_50opacity"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_activity_intensity_cl" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_avg_heart_rate_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="00"
+                                android:textAllCaps="true"
+                                android:textColor="@color/color_gray_2"
+                                android:textSize="@dimen/_24sdp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toStartOf="@+id/fragment_home_guideline_1"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_avg_heart_rate_label"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_view_1" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_avg_heart_rate_label"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Avg. heart rate"
+                                android:textColor="@color/txt_register_color"
+                                android:textSize="@dimen/_6sdp"
+                                app:layout_constraintEnd_toStartOf="@+id/fragment_home_guideline_1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_avg_heart_rate_value" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_max_heart_rate_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="00"
+                                android:textAllCaps="true"
+                                android:textColor="@color/mandatory_color"
+                                android:textSize="@dimen/_24sdp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_max_heart_rate_label"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_view_1" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_max_heart_rate_label"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Max heart rate"
+                                android:textColor="@color/txt_register_color"
+                                android:textSize="@dimen/_6sdp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_guideline_1"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_max_heart_rate_value" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fragment_home_latest_workout_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fragment_home_latest_workout_main_cl"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/button_background_detail_sky_blue"
+                            android:drawableEnd="@drawable/ic_detail"
+                            android:drawablePadding="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/_13sdp"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:text="Details"
+                            android:textAlignment="center"
+
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/_8ssp" />
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fragment_home_stress_level_and_last_sleep_buttons_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fragment_home_health_mode_summary_and_latest_workout_buttons_ll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/fragment_home_guideline_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:background="@drawable/bg_shadow_white_fragment_home_tile"
+                        android:padding="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout3"
+                        app:layout_constraintEnd_toStartOf="@+id/fragment_home_guideline_3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="Strees level"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_7sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fragment_home_stress_type_na_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="N/A"
+
+                            android:textColor="@color/text_orange"
+                            android:textSize="@dimen/_36ssp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fragment_home_stress_cl"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.vanniktech.emoji.EmojiTextView
+                                android:id="@+id/fragment_home_stress_type_label_emoji"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="A"
+                                android:textColor="@color/text_orange"
+                                android:textSize="@dimen/_24ssp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_stress_type_label_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="N/A"
+                                android:textColor="@color/text_orange"
+                                android:textSize="@dimen/_24ssp"
+                                android:textStyle="bold"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_stress_type_label_emoji"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_stress_type_label_emoji"
+                                app:layout_constraintEnd_toEndOf="@+id/fragment_home_stress_type_label_emoji"
+                                />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:background="@drawable/vertical_gradient"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_13sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/fragment_home_guideline_3"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fragment_home_sleep_top_cl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/fragment_home_sleep_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_lastsleep"
+                                app:layout_constraintBottom_toBottomOf="@+id/one"
+                                app:layout_constraintEnd_toStartOf="@+id/one"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/one"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="LAST SLEEP"
+                                android:textAllCaps="true"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/_7sdp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fragment_home_sleep_middle_cl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fragment_home_sleep_top_cl"
+                            android:layout_marginTop="@dimen/_16sdp">
+
+                            <androidx.constraintlayout.widget.Guideline
+                                android:id="@+id/fragment_home_guideline_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                app:layout_constraintGuide_percent="0.5" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_total_sleep_time_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:background="@drawable/button_background_detail_gray"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_8sdp"
+                                android:paddingBottom="@dimen/_8sdp"
+                                android:text="0h 0m"
+                                android:textColor="@color/color_violet"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toStartOf="@+id/fragment_home_guideline_2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_total_sleep_time_label"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:text="Total Sleep Time"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/_5ssp"
+                                app:layout_constraintEnd_toEndOf="@+id/fragment_home_total_sleep_time_value"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_total_sleep_time_value"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_total_sleep_time_value" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_deep_sleep_percentage_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:background="@drawable/button_background_detail_gray"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_8sdp"
+                                android:paddingBottom="@dimen/_8sdp"
+                                android:text="0%"
+                                android:textColor="@color/color_violet"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_guideline_2"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_deep_sleep_percentage_label"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:text="Deep Sleep Percentage"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/_5ssp"
+                                app:layout_constraintEnd_toEndOf="@+id/fragment_home_deep_sleep_percentage_value"
+                                app:layout_constraintStart_toStartOf="@+id/fragment_home_deep_sleep_percentage_value"
+                                app:layout_constraintTop_toBottomOf="@+id/fragment_home_deep_sleep_percentage_value" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fragment_home_last_sleep_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fragment_home_sleep_middle_cl"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_13sdp"
+                            android:background="@drawable/button_background_detail_gray"
+                            android:drawableEnd="@drawable/ic_detail"
+                            android:drawablePadding="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/_13sdp"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:text="Details"
+                            android:textAlignment="center"
+
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/_8ssp" />
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <EditText
+                    android:id="@+id/abc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fragment_home_stress_level_and_last_sleep_buttons_ll"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_18sdp"
+                    android:background="@drawable/custom_home_button"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_dob"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/label_quick_scan"
+                    android:inputType="none"
+                    android:lines="1"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/text_dashboard"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/activity_main_quick_activity_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/abc"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_18sdp"
+                    android:background="@drawable/custom_home_button"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_gender"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/label_activity_mode"
+                    android:inputType="none"
+                    android:lines="1"
+                    android:padding="@dimen/_12sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/activity_main_quick_health_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_quick_activity_mode"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_18sdp"
+                    android:background="@drawable/custom_home_button"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/ic_gender"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/label_health_mode"
+                    android:inputType="none"
+                    android:lines="1"
+                    android:padding="@dimen/_12sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
